@@ -1,0 +1,3054 @@
+[
+  {
+    "id": 1,
+    "word": "acts",
+    "sentence_en": "The acts of kindness were appreciated by everyone.",
+    "meaning_de": {
+      "A": "Jahr",
+      "B": "Haus",
+      "C": "Handlungen oder Taten",
+      "D": "Schritt"
+    },
+    "meaning_fa": "عمل یا اقدام",
+    "explanation": "'Handlungen oder Taten' bedeutet auf Englisch 'acts'.",
+    "correct": "C"
+  },
+  {
+    "id": 2,
+    "word": "interface",
+    "sentence_en": "The interface between the two systems is crucial for data exchange.",
+    "meaning_de": {
+      "A": "Schnittstelle",
+      "B": "wachsen",
+      "C": "hässlich",
+      "D": "machen"
+    },
+    "meaning_fa": "رابط، ارتباط بین دو سیستم",
+    "explanation": "'Schnittstelle' bedeutet auf Englisch 'interface'.",
+    "correct": "A"
+  },
+  {
+    "id": 3,
+    "word": "initializes",
+    "sentence_en": "The program initializes the variables before running.",
+    "meaning_de": {
+      "A": "Initialisiert",
+      "B": "Ort",
+      "C": "Rücken",
+      "D": "Blut"
+    },
+    "meaning_fa": "مقداردهی اولیه می‌کند، مقادیر اولیه را تنظیم می‌کند",
+    "explanation": "'Initialisiert' bedeutet auf Englisch 'initializes'.",
+    "correct": "A"
+  },
+  {
+    "id": 4,
+    "word": "ensuring",
+    "sentence_en": "Ensuring the safety of the workers is a top priority.",
+    "meaning_de": {
+      "A": "Kind",
+      "B": "wissen",
+      "C": "Buch",
+      "D": "Sicherstellen"
+    },
+    "meaning_fa": "اطمینان حاصل کردن، تضمین کردن",
+    "explanation": "'Sicherstellen' bedeutet auf Englisch 'ensuring'.",
+    "correct": "D"
+  },
+  {
+    "id": 5,
+    "word": "contributes",
+    "sentence_en": "She contributes a lot to the success of the team.",
+    "meaning_de": {
+      "A": "Buch",
+      "B": "reich",
+      "C": "Beitragen",
+      "D": "arm"
+    },
+    "meaning_fa": "مشارکت کردن، همکاری کردن",
+    "explanation": "'Beitragen' bedeutet auf Englisch 'contributes'.",
+    "correct": "C"
+  },
+  {
+    "id": 6,
+    "word": "take over",
+    "sentence_en": "He will take over the project next month.",
+    "meaning_de": {
+      "A": "leise",
+      "B": "Baum",
+      "C": "Übernehmen",
+      "D": "Linie"
+    },
+    "meaning_fa": "تحویل گرفتن، کنترل را به دست گرفتن",
+    "explanation": "'Übernehmen' bedeutet auf Englisch 'take over'.",
+    "correct": "C"
+  },
+  {
+    "id": 8,
+    "word": "improves",
+    "sentence_en": "Regular practice improves your skills.",
+    "meaning_de": {
+      "A": "Licht",
+      "B": "Verbessern",
+      "C": "laut",
+      "D": "teuer"
+    },
+    "meaning_fa": "بهبود بخشیدن، افزایش دادن",
+    "explanation": "'Verbessern' bedeutet auf Englisch 'improves'.",
+    "correct": "B"
+  },
+  {
+    "id": 7,
+    "word": "Extensible",
+    "sentence_en": "The software is extensible, allowing for future upgrades.",
+    "meaning_de": {
+      "A": "Geld",
+      "B": "Erweiterbar",
+      "C": "unfreundlich",
+      "D": "nett"
+    },
+    "meaning_fa": "قابل گسترش، امکان ارتقاء در آینده را فراهم می‌کند",
+    "explanation": "'Erweiterbar' bedeutet auf Englisch 'Extensible'.",
+    "correct": "B"
+  },
+  {
+    "id": 9,
+    "word": "handling",
+    "sentence_en": "Handling customer complaints effectively is essential for business success.",
+    "meaning_de": {
+      "A": "Verstand",
+      "B": "Umgang",
+      "C": "schön",
+      "D": "Stimme"
+    },
+    "meaning_fa": "مدیریت، رسیدگی",
+    "explanation": "'Umgang' bedeutet auf Englisch 'handling'.",
+    "correct": "B"
+  },
+  {
+    "id": 10,
+    "word": "procedures",
+    "sentence_en": "The procedures for submitting a claim are outlined in the policy.",
+    "meaning_de": {
+      "A": "Verfahren",
+      "B": "wollen",
+      "C": "Stuhl",
+      "D": "Licht"
+    },
+    "meaning_fa": "رویه‌ها، مراحل",
+    "explanation": "'Verfahren' bedeutet auf Englisch 'procedures'.",
+    "correct": "A"
+  },
+  {
+    "id": 11,
+    "word": "sensitive",
+    "sentence_en": "The sensitive data must be protected at all costs.",
+    "meaning_de": {
+      "A": "Tatsache",
+      "B": "Tag",
+      "C": "arm",
+      "D": "Empfindlich"
+    },
+    "meaning_fa": "حساس، ظریف",
+    "explanation": "'Empfindlich' bedeutet auf Englisch 'sensitive'.",
+    "correct": "D"
+  },
+  {
+    "id": 12,
+    "word": "reliable",
+    "sentence_en": "A reliable source of information is crucial for making informed decisions.",
+    "meaning_de": {
+      "A": "Zuverlässig",
+      "B": "zeigen",
+      "C": "aktiv",
+      "D": "Name"
+    },
+    "meaning_fa": "قابل اعتماد، معتبر",
+    "explanation": "'Zuverlässig' bedeutet auf Englisch 'reliable'.",
+    "correct": "A"
+  },
+  {
+    "id": 13,
+    "word": "unnecessary",
+    "sentence_en": "Avoid unnecessary expenses to save money.",
+    "meaning_de": {
+      "A": "Unnötig",
+      "B": "Lippe",
+      "C": "ängstlich",
+      "D": "machen"
+    },
+    "meaning_fa": "غیر ضروری، اضافی",
+    "explanation": "'Unnötig' bedeutet auf Englisch 'unnecessary'.",
+    "correct": "A"
+  },
+  {
+    "id": 14,
+    "word": "malicious",
+    "sentence_en": "The malicious software caused significant damage to the system.",
+    "meaning_de": {
+      "A": "Bösartig",
+      "B": "Feuer",
+      "C": "suchen",
+      "D": "alt"
+    },
+    "meaning_fa": "بدخواهانه، مخرب",
+    "explanation": "'Bösartig' bedeutet auf Englisch 'malicious'.",
+    "correct": "A"
+  },
+  {
+    "id": 15,
+    "word": "increased",
+    "sentence_en": "The company has seen increased sales this quarter.",
+    "meaning_de": {
+      "A": "bescheiden",
+      "B": "Frau",
+      "C": "Erhöht",
+      "D": "Linie"
+    },
+    "meaning_fa": "افزایش یافته، بالا رفته",
+    "explanation": "'Erhöht' bedeutet auf Englisch 'increased'.",
+    "correct": "C"
+  },
+  {
+    "id": 16,
+    "word": "crucial",
+    "sentence_en": "It is crucial to meet the deadline for the project.",
+    "meaning_de": {
+      "A": "Entscheidend",
+      "B": "frisch",
+      "C": "stellen",
+      "D": "verkaufen"
+    },
+    "meaning_fa": "حیاتی، بحرانی",
+    "explanation": "'Entscheidend' bedeutet auf Englisch 'crucial'.",
+    "correct": "A"
+  },
+  {
+    "id": 17,
+    "word": "acquired",
+    "sentence_en": "She acquired a new skill through practice.",
+    "meaning_de": {
+      "A": "Gesicht",
+      "B": "Erworben",
+      "C": "Kopf",
+      "D": "Zimmer"
+    },
+    "meaning_fa": "کسب شده، به دست آمده",
+    "explanation": "'Erworben' bedeutet auf Englisch 'acquired'.",
+    "correct": "B"
+  },
+  {
+    "id": 18,
+    "word": "vulnerabilities",
+    "sentence_en": "Identifying vulnerabilities in the system is essential for security.",
+    "meaning_de": {
+      "A": "Mutter",
+      "B": "Schwachstellen",
+      "C": "nehmen",
+      "D": "Lippe"
+    },
+    "meaning_fa": "آسیب‌پذیری‌ها، نقاط ضعف",
+    "explanation": "'Schwachstellen' bedeutet auf Englisch 'vulnerabilities'.",
+    "correct": "B"
+  },
+  {
+    "id": 19,
+    "word": "broader",
+    "sentence_en": "The broader implications of the decision were considered.",
+    "meaning_de": {
+      "A": "Breiter",
+      "B": "zahlen",
+      "C": "laut",
+      "D": "Blut"
+    },
+    "meaning_fa": "گسترده‌تر، جامع‌تر",
+    "explanation": "'Breiter' bedeutet auf Englisch 'broader'.",
+    "correct": "A"
+  },
+  {
+    "id": 20,
+    "word": "maintain",
+    "sentence_en": "It is important to maintain a healthy lifestyle.",
+    "meaning_de": {
+      "A": "Stimme",
+      "B": "Aufrechterhalten",
+      "C": "Mann",
+      "D": "nehmen"
+    },
+    "meaning_fa": "نگهداری کردن، حفظ کردن",
+    "explanation": "'Aufrechterhalten' bedeutet auf Englisch 'maintain'.",
+    "correct": "B"
+  },
+  {
+    "id": 21,
+    "word": "vital",
+    "sentence_en": "Water is vital for all forms of life.",
+    "meaning_de": {
+      "A": "Leute",
+      "B": "Lebenswichtig",
+      "C": "kompliziert",
+      "D": "traurig"
+    },
+    "meaning_fa": "حیاتی، ضروری",
+    "explanation": "'Lebenswichtig' bedeutet auf Englisch 'vital'.",
+    "correct": "B"
+  },
+  {
+    "id": 22,
+    "word": "responding",
+    "sentence_en": "The team is responding quickly to customer inquiries.",
+    "meaning_de": {
+      "A": "klein",
+      "B": "schaffen",
+      "C": "Reagieren",
+      "D": "tun"
+    },
+    "meaning_fa": "پاسخ دادن، واکنش نشان دادن",
+    "explanation": "'Reagieren' bedeutet auf Englisch 'responding'.",
+    "correct": "C"
+  },
+  {
+    "id": 23,
+    "word": "smooth",
+    "sentence_en": "The transition to the new system was smooth and without issues.",
+    "meaning_de": {
+      "A": "vergleichen",
+      "B": "Feuer",
+      "C": "Reibungslos",
+      "D": "dumm"
+    },
+    "meaning_fa": "بدون مشکل، نرم",
+    "explanation": "'Reibungslos' bedeutet auf Englisch 'smooth'.",
+    "correct": "C"
+  },
+  {
+    "id": 24,
+    "word": "particularly",
+    "sentence_en": "She is particularly skilled in data analysis.",
+    "meaning_de": {
+      "A": "Kopf",
+      "B": "kühn",
+      "C": "teuer",
+      "D": "Besonders"
+    },
+    "meaning_fa": "به‌ویژه، به‌خصوص",
+    "explanation": "'Besonders' bedeutet auf Englisch 'particularly'.",
+    "correct": "D"
+  },
+  {
+    "id": 25,
+    "word": "enforcing",
+    "sentence_en": "The new law is enforcing stricter regulations on emissions.",
+    "meaning_de": {
+      "A": "altmodisch",
+      "B": "Teil",
+      "C": "Durchsetzen",
+      "D": "Linie"
+    },
+    "meaning_fa": "اجرا کردن، تحمیل کردن",
+    "explanation": "'Durchsetzen' bedeutet auf Englisch 'enforcing'.",
+    "correct": "C"
+  },
+  {
+    "id": 26,
+    "word": "applied",
+    "sentence_en": "The applied research has practical applications in the industry.",
+    "meaning_de": {
+      "A": "heiß",
+      "B": "Kind",
+      "C": "Angewendet",
+      "D": "teuer"
+    },
+    "meaning_fa": "کاربردی، عملی",
+    "explanation": "'Angewendet' bedeutet auf Englisch 'applied'.",
+    "correct": "C"
+  },
+  {
+    "id": 27,
+    "word": "interact",
+    "sentence_en": "Students are encouraged to interact with each other during group work.",
+    "meaning_de": {
+      "A": "Interagieren",
+      "B": "Stimme",
+      "C": "Frage",
+      "D": "Linie"
+    },
+    "meaning_fa": "تعامل کردن، اثر متقابل",
+    "explanation": "'Interagieren' bedeutet auf Englisch 'interact'.",
+    "correct": "A"
+  },
+  {
+    "id": 28,
+    "word": "foundational",
+    "sentence_en": "The foundational principles of the theory are well established.",
+    "meaning_de": {
+      "A": "schmutzig",
+      "B": "kompliziert",
+      "C": "nett",
+      "D": "Grundlegend"
+    },
+    "meaning_fa": "اساسی، بنیادی",
+    "explanation": "'Grundlegend' bedeutet auf Englisch 'foundational'.",
+    "correct": "D"
+  },
+  {
+    "id": 29,
+    "word": "maintaining",
+    "sentence_en": "Maintaining a clean environment is important.",
+    "meaning_de": {
+      "A": "Zeit",
+      "B": "glücklich",
+      "C": "ängstlich",
+      "D": "Aufrechterhalten"
+    },
+    "meaning_fa": "نگهداری، حفظ",
+    "explanation": "'Aufrechterhalten' bedeutet auf Englisch 'maintaining'.",
+    "correct": "D"
+  },
+  {
+    "id": 30,
+    "word": "improper",
+    "sentence_en": "The improper use of resources can lead to waste.",
+    "meaning_de": {
+      "A": "Welt",
+      "B": "Atem",
+      "C": "Boden",
+      "D": "Unangemessen"
+    },
+    "meaning_fa": "نامناسب، غیرقانونی",
+    "explanation": "'Unangemessen' bedeutet auf Englisch 'improper'.",
+    "correct": "D"
+  },
+  {
+    "id": 31,
+    "word": "breaches",
+    "sentence_en": "The report highlighted several security breaches.",
+    "meaning_de": {
+      "A": "Blick",
+      "B": "Verstöße",
+      "C": "sparen",
+      "D": "mögen"
+    },
+    "meaning_fa": "نقض‌ ها، شکاف‌ ها",
+    "explanation": "'Verstöße' bedeutet auf Englisch 'breaches'.",
+    "correct": "B"
+  },
+  {
+    "id": 32,
+    "word": "incidents",
+    "sentence_en": "Several incidents were reported during the event.",
+    "meaning_de": {
+      "A": "Ort",
+      "B": "kalt",
+      "C": "Vorfälle",
+      "D": "müssen"
+    },
+    "meaning_fa": "حادثه‌ها، رویدادها",
+    "explanation": "'Vorfälle' bedeutet auf Englisch 'incidents'.",
+    "correct": "C"
+  },
+  {
+    "id": 33,
+    "word": "associated",
+    "sentence_en": "The symptoms associated with the disease can vary widely.",
+    "meaning_de": {
+      "A": "Verbunden",
+      "B": "Zimmer",
+      "C": "unterschreiben",
+      "D": "Ehefrau"
+    },
+    "meaning_fa": "مرتبط، وابسته",
+    "explanation": "'Verbunden' bedeutet auf Englisch 'associated'.",
+    "correct": "A"
+  },
+  {
+    "id": 34,
+    "word": "rather",
+    "sentence_en": "I would rather go for a walk than stay indoors.",
+    "meaning_de": {
+      "A": "verkaufen",
+      "B": "Geld",
+      "C": "Herz",
+      "D": "Eher"
+    },
+    "meaning_fa": "بیشتر، در عوض",
+    "explanation": "'Eher' bedeutet auf Englisch 'rather'.",
+    "correct": "D"
+  },
+  {
+    "id": 35,
+    "word": "established",
+    "sentence_en": "The established procedures must be followed.",
+    "meaning_de": {
+      "A": "verkaufen",
+      "B": "machen",
+      "C": "Arbeit",
+      "D": "Etabliert"
+    },
+    "meaning_fa": "تاسیس شده، تعیین شده",
+    "explanation": "'Etabliert' bedeutet auf Englisch 'established'.",
+    "correct": "D"
+  },
+  {
+    "id": 36,
+    "word": "copper",
+    "sentence_en": "Copper is a good conductor of electricity.",
+    "meaning_de": {
+      "A": "unfreundlich",
+      "B": "Kupfer",
+      "C": "Kind",
+      "D": "Bein"
+    },
+    "meaning_fa": "مس",
+    "explanation": "'Kupfer' bedeutet auf Englisch 'copper'.",
+    "correct": "B"
+  },
+  {
+    "id": 37,
+    "word": "twisted",
+    "sentence_en": "The wire was twisted to create a stronger connection.",
+    "meaning_de": {
+      "A": "Anderen",
+      "B": "suchen",
+      "C": "Schulter",
+      "D": "Verdreht"
+    },
+    "meaning_fa": "پیچ خورده، تاب خورده",
+    "explanation": "'Verdreht' bedeutet auf Englisch 'twisted'.",
+    "correct": "D"
+  },
+  {
+    "id": 38,
+    "word": "pair",
+    "sentence_en": "A pair of shoes was left at the door.",
+    "meaning_de": {
+      "A": "Feuer",
+      "B": "neu",
+      "C": "traurig",
+      "D": "Paar"
+    },
+    "meaning_fa": "جفت، دو چیز که به هم تعلق دارند",
+    "explanation": "'Paar' bedeutet auf Englisch 'pair'.",
+    "correct": "D"
+  },
+  {
+    "id": 39,
+    "word": "majority",
+    "sentence_en": "The majority of the votes were in favor of the proposal.",
+    "meaning_de": {
+      "A": "verstehen",
+      "B": "zeigen",
+      "C": "müssen",
+      "D": "Mehrheit"
+    },
+    "meaning_fa": "اکثریت، بیشترین تعداد",
+    "explanation": "'Mehrheit' bedeutet auf Englisch 'majority'.",
+    "correct": "D"
+  },
+  {
+    "id": 40,
+    "word": "purchase",
+    "sentence_en": "The purchase of the new equipment was approved.",
+    "meaning_de": {
+      "A": "Freund",
+      "B": "Kauf",
+      "C": "jung",
+      "D": "reich"
+    },
+    "meaning_fa": "خرید، تهیه",
+    "explanation": "'Kauf' bedeutet auf Englisch 'purchase'.",
+    "correct": "B"
+  },
+  {
+    "id": 41,
+    "word": "bonded",
+    "sentence_en": "The bonded warehouse ensures the safety of the goods.",
+    "meaning_de": {
+      "A": "Kopf",
+      "B": "Gebunden",
+      "C": "leise",
+      "D": "Junge"
+    },
+    "meaning_fa": "متصل، پیوسته",
+    "explanation": "'Gebunden' bedeutet auf Englisch 'bonded'.",
+    "correct": "B"
+  },
+  {
+    "id": 42,
+    "word": "units",
+    "sentence_en": "The units of measurement used in the experiment were standardized.",
+    "meaning_de": {
+      "A": "aktiv",
+      "B": "Vater",
+      "C": "jung",
+      "D": "Einheiten"
+    },
+    "meaning_fa": "واحدها، مقیاس‌ها",
+    "explanation": "'Einheiten' bedeutet auf Englisch 'units'.",
+    "correct": "D"
+  },
+  {
+    "id": 43,
+    "word": "chunks of data",
+    "sentence_en": "The system processes chunks of data to improve performance.",
+    "meaning_de": {
+      "A": "dumm",
+      "B": "Datenblöcke",
+      "C": "treffen",
+      "D": "schreiben"
+    },
+    "meaning_fa": "بخش‌های داده، قطعات داده",
+    "explanation": "'Datenblöcke' bedeutet auf Englisch 'chunks of data'.",
+    "correct": "B"
+  },
+  {
+    "id": 44,
+    "word": "interpret",
+    "sentence_en": "It's important to interpret the results correctly.",
+    "meaning_de": {
+      "A": "Stuhl",
+      "B": "Linie",
+      "C": "Interpretieren",
+      "D": "zahlen"
+    },
+    "meaning_fa": "تفسیر کردن، معنی دادن",
+    "explanation": "'Interpretieren' bedeutet auf Englisch 'interpret'.",
+    "correct": "C"
+  },
+  {
+    "id": 45,
+    "word": "there must be",
+    "sentence_en": "There must be a reason for the delay in delivery.",
+    "meaning_de": {
+      "A": "Schritt",
+      "B": "Mutter",
+      "C": "sein",
+      "D": "Es muss geben"
+    },
+    "meaning_fa": "باید وجود داشته باشد، باید باشد",
+    "explanation": "'Es muss geben' bedeutet auf Englisch 'there must be'.",
+    "correct": "D"
+  },
+  {
+    "id": 46,
+    "word": "insolation",
+    "sentence_en": "Insolation is the amount of solar radiation reaching a given area.",
+    "meaning_de": {
+      "A": "Einstrahlung",
+      "B": "leise",
+      "C": "Mann",
+      "D": "Zimmer"
+    },
+    "meaning_fa": "تابش خورشیدی، تابش نور خورشید",
+    "explanation": "'Einstrahlung' bedeutet auf Englisch 'insolation'.",
+    "correct": "A"
+  },
+  {
+    "id": 47,
+    "word": "displacement",
+    "sentence_en": "The displacement of water by the submerged object was measured.",
+    "meaning_de": {
+      "A": "Verschiebung",
+      "B": "heiß",
+      "C": "Tisch",
+      "D": "dumm"
+    },
+    "meaning_fa": "جابجایی، انتقال",
+    "explanation": "'Verschiebung' bedeutet auf Englisch 'displacement'.",
+    "correct": "A"
+  },
+  {
+    "id": 48,
+    "word": "wiring",
+    "sentence_en": "The wiring in the building needs to be updated.",
+    "meaning_de": {
+      "A": "traurig",
+      "B": "laut",
+      "C": "Mund",
+      "D": "Verdrahtung"
+    },
+    "meaning_fa": "سیم‌کشی، کابل‌کشی",
+    "explanation": "'Verdrahtung' bedeutet auf Englisch 'wiring'.",
+    "correct": "D"
+  },
+  {
+    "id": 49,
+    "word": "concentrate",
+    "sentence_en": "It's hard to concentrate with all this noise.",
+    "meaning_de": {
+      "A": "Konzentrieren",
+      "B": "ängstlich",
+      "C": "Blick",
+      "D": "heiß"
+    },
+    "meaning_fa": "تمرکز کردن، متمرکز شدن",
+    "explanation": "'Konzentrieren' bedeutet auf Englisch 'concentrate'.",
+    "correct": "A"
+  },
+  {
+    "id": 50,
+    "word": "seem",
+    "sentence_en": "They seem to be happy with the results.",
+    "meaning_de": {
+      "A": "sprechen",
+      "B": "Scheinen",
+      "C": "arm",
+      "D": "nennen"
+    },
+    "meaning_fa": "به نظر رسیدن، ظاهر داشتن",
+    "explanation": "'Scheinen' bedeutet auf Englisch 'seem'.",
+    "correct": "B"
+  },
+  {
+    "id": 51,
+    "word": "circuitry",
+    "sentence_en": "The circuitry in the device is complex.",
+    "meaning_de": {
+      "A": "Büro",
+      "B": "Schulter",
+      "C": "Schaltkreis",
+      "D": "Monat"
+    },
+    "meaning_fa": "مدار، سیم‌کشی",
+    "explanation": "'Schaltkreis' bedeutet auf Englisch 'circuitry'.",
+    "correct": "C"
+  },
+  {
+    "id": 52,
+    "word": "consider",
+    "sentence_en": "You should consider all the options before making a decision.",
+    "meaning_de": {
+      "A": "stolz",
+      "B": "Berücksichtigen",
+      "C": "Blut",
+      "D": "Schulter"
+    },
+    "meaning_fa": "در نظر گرفتن، مد نظر قرار دادن",
+    "explanation": "'Berücksichtigen' bedeutet auf Englisch 'consider'.",
+    "correct": "B"
+  },
+  {
+    "id": 53,
+    "word": "collision",
+    "sentence_en": "The collision between the two cars caused significant damage.",
+    "meaning_de": {
+      "A": "altbacken",
+      "B": "Feuer",
+      "C": "Bein",
+      "D": "Kollision"
+    },
+    "meaning_fa": "تصادف، برخورد",
+    "explanation": "'Kollision' bedeutet auf Englisch 'collision'.",
+    "correct": "D"
+  },
+  {
+    "id": 54,
+    "word": "inserting",
+    "sentence_en": "Inserting the new data into the database was successful.",
+    "meaning_de": {
+      "A": "zahlen",
+      "B": "Sache",
+      "C": "Lippe",
+      "D": "Einfügen"
+    },
+    "meaning_fa": "وارد کردن، درج کردن",
+    "explanation": "'Einfügen' bedeutet auf Englisch 'inserting'.",
+    "correct": "D"
+  },
+  {
+    "id": 55,
+    "word": "refined",
+    "sentence_en": "The refined process improved the quality of the product.",
+    "meaning_de": {
+      "A": "Büro",
+      "B": "Verfeinert",
+      "C": "Welt",
+      "D": "lustig"
+    },
+    "meaning_fa": "تصفیه شده، پالایش شده",
+    "explanation": "'Verfeinert' bedeutet auf Englisch 'refined'.",
+    "correct": "B"
+  },
+  {
+    "id": 56,
+    "word": "appliances",
+    "sentence_en": "The kitchen is equipped with modern appliances.",
+    "meaning_de": {
+      "A": "Geräte",
+      "B": "Atem",
+      "C": "Welt",
+      "D": "bescheiden"
+    },
+    "meaning_fa": "لوازم، دستگاه‌ها",
+    "explanation": "'Geräte' bedeutet auf Englisch 'appliances'.",
+    "correct": "A"
+  },
+  {
+    "id": 57,
+    "word": "underpin",
+    "sentence_en": "The theory is underpinned by a wealth of research.",
+    "meaning_de": {
+      "A": "Unterstützen",
+      "B": "Gesicht",
+      "C": "heiß",
+      "D": "dunkel"
+    },
+    "meaning_fa": "پشتیبانی کردن، تقویت کردن",
+    "explanation": "'Unterstützen' bedeutet auf Englisch 'underpin'.",
+    "correct": "A"
+  },
+  {
+    "id": 58,
+    "word": "contention",
+    "sentence_en": "The contention between the two parties was evident.",
+    "meaning_de": {
+      "A": "Baby",
+      "B": "Auseinandersetzung",
+      "C": "trinken",
+      "D": "frisch"
+    },
+    "meaning_fa": "اختلاف، منازعه",
+    "explanation": "'Auseinandersetzung' bedeutet auf Englisch 'contention'.",
+    "correct": "B"
+  },
+  {
+    "id": 59,
+    "word": "simultaneously",
+    "sentence_en": "The two events occurred simultaneously.",
+    "meaning_de": {
+      "A": "Kopf",
+      "B": "Licht",
+      "C": "Gleichzeitig",
+      "D": "Boden"
+    },
+    "meaning_fa": "به‌طور همزمان، هم‌زمان",
+    "explanation": "'Gleichzeitig' bedeutet auf Englisch 'simultaneously'.",
+    "correct": "C"
+  },
+  {
+    "id": 60,
+    "word": "flood",
+    "sentence_en": "The flood caused extensive damage to the town.",
+    "meaning_de": {
+      "A": "Leben",
+      "B": "groß",
+      "C": "Überschwemmung",
+      "D": "klein"
+    },
+    "meaning_fa": "سیل، طغیانی",
+    "explanation": "'Überschwemmung' bedeutet auf Englisch 'flood'.",
+    "correct": "C"
+  },
+  {
+    "id": 61,
+    "word": "intervention",
+    "sentence_en": "The intervention was necessary to prevent further damage.",
+    "meaning_de": {
+      "A": "Bruder",
+      "B": "müde",
+      "C": "zeigen",
+      "D": "Intervention"
+    },
+    "meaning_fa": "مداخله، دخالت",
+    "explanation": "'Intervention' bedeutet auf Englisch 'intervention'.",
+    "correct": "D"
+  },
+  {
+    "id": 62,
+    "word": "supplied",
+    "sentence_en": "The materials supplied for the project were of high quality.",
+    "meaning_de": {
+      "A": "nett",
+      "B": "Freund",
+      "C": "sehen",
+      "D": "Geliefert"
+    },
+    "meaning_fa": "تأمین شده، فراهم شده",
+    "explanation": "'Geliefert' bedeutet auf Englisch 'supplied'.",
+    "correct": "D"
+  },
+  {
+    "id": 63,
+    "word": "accommodate",
+    "sentence_en": "The new policies are designed to accommodate the needs of all employees.",
+    "meaning_de": {
+      "A": "leise",
+      "B": "ängstlich",
+      "C": "Tatsache",
+      "D": "Unterbringen"
+    },
+    "meaning_fa": "جای دادن، سازگار کردن",
+    "explanation": "'Unterbringen' bedeutet auf Englisch 'accommodate'.",
+    "correct": "D"
+  },
+  {
+    "id": 64,
+    "word": "provisioning",
+    "sentence_en": "The provisioning of resources is essential for the project.",
+    "meaning_de": {
+      "A": "glücklich",
+      "B": "Bereitstellung",
+      "C": "Tür",
+      "D": "Schulter"
+    },
+    "meaning_fa": "تأمین، فراهم‌سازی",
+    "explanation": "'Bereitstellung' bedeutet auf Englisch 'provisioning'.",
+    "correct": "B"
+  },
+  {
+    "id": 65,
+    "word": "ordinary",
+    "sentence_en": "The ordinary tasks were completed without any issues.",
+    "meaning_de": {
+      "A": "Stuhl",
+      "B": "Nacht",
+      "C": "klug",
+      "D": "Gewöhnlich"
+    },
+    "meaning_fa": "معمولی، عادی",
+    "explanation": "'Gewöhnlich' bedeutet auf Englisch 'ordinary'.",
+    "correct": "D"
+  },
+  {
+    "id": 66,
+    "word": "draw up",
+    "sentence_en": "We need to draw up a plan before the meeting.",
+    "meaning_de": {
+      "A": "verkaufen",
+      "B": "sein",
+      "C": "Entwerfen",
+      "D": "Glas"
+    },
+    "meaning_fa": "طراحی کردن، تنظیم کردن",
+    "explanation": "'Entwerfen' bedeutet auf Englisch 'draw up'.",
+    "correct": "C"
+  },
+  {
+    "id": 67,
+    "word": "usable",
+    "sentence_en": "The software is user-friendly and easily usable.",
+    "meaning_de": {
+      "A": "müde",
+      "B": "sein",
+      "C": "Benutzbar",
+      "D": "ängstlich"
+    },
+    "meaning_fa": "قابل استفاده، قابل به کارگیری",
+    "explanation": "'Benutzbar' bedeutet auf Englisch 'usable'.",
+    "correct": "C"
+  },
+  {
+    "id": 68,
+    "word": "ascertain",
+    "sentence_en": "The detective worked to ascertain the facts of the case.",
+    "meaning_de": {
+      "A": "Feststellen",
+      "B": "ängstlich",
+      "C": "Körper",
+      "D": "Mann"
+    },
+    "meaning_fa": "مشخص کردن، تعیین کردن",
+    "explanation": "'Feststellen' bedeutet auf Englisch 'ascertain'.",
+    "correct": "A"
+  },
+  {
+    "id": 69,
+    "word": "determine",
+    "sentence_en": "The investigation aims to determine the cause of the incident.",
+    "meaning_de": {
+      "A": "Frau",
+      "B": "verlieren",
+      "C": "Bestimmen",
+      "D": "sparen"
+    },
+    "meaning_fa": "تعیین کردن، مشخص کردن",
+    "explanation": "'Bestimmen' bedeutet auf Englisch 'determine'.",
+    "correct": "C"
+  },
+  {
+    "id": 70,
+    "word": "consumption",
+    "sentence_en": "The consumption of resources must be monitored.",
+    "meaning_de": {
+      "A": "Baby",
+      "B": "Frage",
+      "C": "Tisch",
+      "D": "Verbrauch"
+    },
+    "meaning_fa": "مصرف، استفاده",
+    "explanation": "'Verbrauch' bedeutet auf Englisch 'consumption'.",
+    "correct": "D"
+  },
+  {
+    "id": 71,
+    "word": "appropriate",
+    "sentence_en": "It is important to use appropriate methods for the analysis.",
+    "meaning_de": {
+      "A": "stellen",
+      "B": "Gesicht",
+      "C": "schreiben",
+      "D": "Angemessen"
+    },
+    "meaning_fa": "مناسب، صحیح",
+    "explanation": "'Angemessen' bedeutet auf Englisch 'appropriate'.",
+    "correct": "D"
+  },
+  {
+    "id": 72,
+    "word": "therefore",
+    "sentence_en": "The project was delayed; therefore, we need to adjust the timeline.",
+    "meaning_de": {
+      "A": "Tür",
+      "B": "sprechen",
+      "C": "Deshalb",
+      "D": "treffen"
+    },
+    "meaning_fa": "بنابراین، از این رو",
+    "explanation": "'Deshalb' bedeutet auf Englisch 'therefore'.",
+    "correct": "C"
+  },
+  {
+    "id": 73,
+    "word": "power capping",
+    "sentence_en": "Power capping is essential for managing energy consumption.",
+    "meaning_de": {
+      "A": "Leistungsbegrenzung",
+      "B": "Leute",
+      "C": "Sache",
+      "D": "sollen"
+    },
+    "meaning_fa": "محدودیت توان",
+    "explanation": "'Leistungsbegrenzung' bedeutet auf Englisch 'power capping'.",
+    "correct": "A"
+  },
+  {
+    "id": 74,
+    "word": "exceed",
+    "sentence_en": "The results exceed our expectations.",
+    "meaning_de": {
+      "A": "Bruder",
+      "B": "sauber",
+      "C": "Lippe",
+      "D": "Übertreffen"
+    },
+    "meaning_fa": "فراتر رفتن، تجاوز کردن",
+    "explanation": "'Übertreffen' bedeutet auf Englisch 'exceed'.",
+    "correct": "D"
+  },
+  {
+    "id": 75,
+    "word": "sustainability",
+    "sentence_en": "Sustainability is a key consideration in our project planning.",
+    "meaning_de": {
+      "A": "Freund",
+      "B": "Nachhaltigkeit",
+      "C": "Tag",
+      "D": "Blut"
+    },
+    "meaning_fa": "پایداری",
+    "explanation": "'Nachhaltigkeit' bedeutet auf Englisch 'sustainability'.",
+    "correct": "B"
+  },
+  {
+    "id": 76,
+    "word": "convey",
+    "sentence_en": "The teacher used examples to convey the lesson's main points.",
+    "meaning_de": {
+      "A": "sollen",
+      "B": "Kind",
+      "C": "treffen",
+      "D": "Übermitteln"
+    },
+    "meaning_fa": "انتقال دادن، رساندن",
+    "explanation": "'Übermitteln' bedeutet auf Englisch 'convey'.",
+    "correct": "D"
+  },
+  {
+    "id": 77,
+    "word": "reason",
+    "sentence_en": "The reason for the delay was unforeseen circumstances.",
+    "meaning_de": {
+      "A": "Körper",
+      "B": "Grund",
+      "C": "leise",
+      "D": "Stuhl"
+    },
+    "meaning_fa": "دلیل، علت",
+    "explanation": "'Grund' bedeutet auf Englisch 'reason'.",
+    "correct": "B"
+  },
+  {
+    "id": 78,
+    "word": "intermittent",
+    "sentence_en": "The intermittent rain caused delays in the construction schedule.",
+    "meaning_de": {
+      "A": "schlecht",
+      "B": "schaffen",
+      "C": "nehmen",
+      "D": "Unterbrochen"
+    },
+    "meaning_fa": "متناوب، گاه به گاه",
+    "explanation": "'Unterbrochen' bedeutet auf Englisch 'intermittent'.",
+    "correct": "D"
+  },
+  {
+    "id": 79,
+    "word": "causes",
+    "sentence_en": "The causes of the issue were thoroughly investigated.",
+    "meaning_de": {
+      "A": "nett",
+      "B": "Ursachen",
+      "C": "kompliziert",
+      "D": "faul"
+    },
+    "meaning_fa": "علل",
+    "explanation": "'Ursachen' bedeutet auf Englisch 'causes'.",
+    "correct": "B"
+  },
+  {
+    "id": 80,
+    "word": "consonant",
+    "sentence_en": "In English, the letters B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, and Z are consonants.",
+    "meaning_de": {
+      "A": "Anderen",
+      "B": "verkaufen",
+      "C": "Konsonant",
+      "D": "werden"
+    },
+    "meaning_fa": "حرف بی صدا",
+    "explanation": "'Konsonant' bedeutet auf Englisch 'consonant'.",
+    "correct": "C"
+  },
+  {
+    "id": 81,
+    "word": "illness",
+    "sentence_en": "The patient was diagnosed with a chronic illness.",
+    "meaning_de": {
+      "A": "Mund",
+      "B": "lernen",
+      "C": "nehmen",
+      "D": "Krankheit"
+    },
+    "meaning_fa": "بیماری",
+    "explanation": "'Krankheit' bedeutet auf Englisch 'illness'.",
+    "correct": "D"
+  },
+  {
+    "id": 82,
+    "word": "sufficient",
+    "sentence_en": "The evidence provided was not sufficient to support the claim.",
+    "meaning_de": {
+      "A": "Herz",
+      "B": "Ausreichend",
+      "C": "reich",
+      "D": "krank"
+    },
+    "meaning_fa": "کافی، بسنده",
+    "explanation": "'Ausreichend' bedeutet auf Englisch 'sufficient'.",
+    "correct": "B"
+  },
+  {
+    "id": 83,
+    "word": "avoid",
+    "sentence_en": "To avoid confusion, please read the instructions carefully.",
+    "meaning_de": {
+      "A": "Teil",
+      "B": "jung",
+      "C": "Vermeiden",
+      "D": "aktiv"
+    },
+    "meaning_fa": "اجتناب کردن",
+    "explanation": "'Vermeiden' bedeutet auf Englisch 'avoid'.",
+    "correct": "C"
+  },
+  {
+    "id": 84,
+    "word": "lose track of something",
+    "sentence_en": "I tend to lose track of time when I'm focused on a task.",
+    "meaning_de": {
+      "A": "Den Überblick verlieren",
+      "B": "einfach",
+      "C": "Ehefrau",
+      "D": "stolz"
+    },
+    "meaning_fa": "گم کردن مسیر چیزی، از دست دادن ردیابی چیزی",
+    "explanation": "'Den Überblick verlieren' bedeutet auf Englisch 'lose track of something'.",
+    "correct": "A"
+  },
+  {
+    "id": 85,
+    "word": "stomach",
+    "sentence_en": "He felt a sharp pain in his stomach.",
+    "meaning_de": {
+      "A": "dumm",
+      "B": "Magen",
+      "C": "leise",
+      "D": "reich"
+    },
+    "meaning_fa": "معده",
+    "explanation": "'Magen' bedeutet auf Englisch 'stomach'.",
+    "correct": "B"
+  },
+  {
+    "id": 86,
+    "word": "procrastination",
+    "sentence_en": "Procrastination can lead to increased stress and anxiety.",
+    "meaning_de": {
+      "A": "Aufschub",
+      "B": "Frau",
+      "C": "Baum",
+      "D": "Leben"
+    },
+    "meaning_fa": "به تعویق انداختن",
+    "explanation": "'Aufschub' bedeutet auf Englisch 'procrastination'.",
+    "correct": "A"
+  },
+  {
+    "id": 87,
+    "word": "burning smells",
+    "sentence_en": "The burning smells from the kitchen indicated that something was cooking.",
+    "meaning_de": {
+      "A": "stolz",
+      "B": "zeigen",
+      "C": "Brennende Gerüche",
+      "D": "Mädchen"
+    },
+    "meaning_fa": "بوی سوختگی",
+    "explanation": "'Brennende Gerüche' bedeutet auf Englisch 'burning smells'.",
+    "correct": "C"
+  },
+  {
+    "id": 88,
+    "word": "bent pins",
+    "sentence_en": "The technician noticed several bent pins in the circuit board.",
+    "meaning_de": {
+      "A": "vergleichen",
+      "B": "Baby",
+      "C": "Verbogene Stifte",
+      "D": "Körper"
+    },
+    "meaning_fa": "پین های خم شده",
+    "explanation": "'Verbogene Stifte' bedeutet auf Englisch 'bent pins'.",
+    "correct": "C"
+  },
+  {
+    "id": 89,
+    "word": "soldering",
+    "sentence_en": "Soldering is a crucial skill for electronics repair.",
+    "meaning_de": {
+      "A": "sparen",
+      "B": "Mutter",
+      "C": "Löten",
+      "D": "Frage"
+    },
+    "meaning_fa": "لحیم کاری",
+    "explanation": "'Löten' bedeutet auf Englisch 'soldering'.",
+    "correct": "C"
+  },
+  {
+    "id": 90,
+    "word": "throttling",
+    "sentence_en": "Throttling the CPU can help reduce heat output.",
+    "meaning_de": {
+      "A": "Zeit",
+      "B": "Atem",
+      "C": "lernen",
+      "D": "Drosselung"
+    },
+    "meaning_fa": "کاهش سرعت",
+    "explanation": "'Drosselung' bedeutet auf Englisch 'throttling'.",
+    "correct": "D"
+  },
+  {
+    "id": 91,
+    "word": "opportunity",
+    "sentence_en": "She took the opportunity to advance her career.",
+    "meaning_de": {
+      "A": "Auge",
+      "B": "Linie",
+      "C": "Gelegenheit",
+      "D": "Anderen"
+    },
+    "meaning_fa": "فرصت، شانس",
+    "explanation": "'Gelegenheit' bedeutet auf Englisch 'opportunity'.",
+    "correct": "C"
+  },
+  {
+    "id": 92,
+    "word": "rule out",
+    "sentence_en": "We can rule out the possibility of a software bug.",
+    "meaning_de": {
+      "A": "Frau",
+      "B": "Ausschließen",
+      "C": "fade",
+      "D": "werden"
+    },
+    "meaning_fa": "رد کردن",
+    "explanation": "'Ausschließen' bedeutet auf Englisch 'rule out'.",
+    "correct": "B"
+  },
+  {
+    "id": 93,
+    "word": "accurate",
+    "sentence_en": "The information provided was accurate and reliable.",
+    "meaning_de": {
+      "A": "Weg",
+      "B": "Genau",
+      "C": "neu",
+      "D": "schaffen"
+    },
+    "meaning_fa": "دقیق، درست",
+    "explanation": "'Genau' bedeutet auf Englisch 'accurate'.",
+    "correct": "B"
+  },
+  {
+    "id": 94,
+    "word": "suddenly",
+    "sentence_en": "The lights went out suddenly during the storm.",
+    "meaning_de": {
+      "A": "sehen",
+      "B": "Plötzlich",
+      "C": "kalt",
+      "D": "stellen"
+    },
+    "meaning_fa": "ناگهان، به طور ناگهانی",
+    "explanation": "'Plötzlich' bedeutet auf Englisch 'suddenly'.",
+    "correct": "B"
+  },
+  {
+    "id": 95,
+    "word": "common",
+    "sentence_en": "It's common to feel nervous before a big presentation.",
+    "meaning_de": {
+      "A": "Lippe",
+      "B": "Gemeinsam",
+      "C": "lernen",
+      "D": "zeigen"
+    },
+    "meaning_fa": "مشترک، رایج",
+    "explanation": "'Gemeinsam' bedeutet auf Englisch 'common'.",
+    "correct": "B"
+  },
+  {
+    "id": 96,
+    "word": "indicator",
+    "sentence_en": "The indicator light turned red, signaling a problem.",
+    "meaning_de": {
+      "A": "lernen",
+      "B": "krank",
+      "C": "Körper",
+      "D": "Anzeichen"
+    },
+    "meaning_fa": "نشانه، نشانگر",
+    "explanation": "'Anzeichen' bedeutet auf Englisch 'indicator'.",
+    "correct": "D"
+  },
+  {
+    "id": 97,
+    "word": "vendor",
+    "sentence_en": "The vendor offered a wide range of products.",
+    "meaning_de": {
+      "A": "machen",
+      "B": "mögen",
+      "C": "Verkäufer",
+      "D": "sauber"
+    },
+    "meaning_fa": "فروشنده، تأمین کننده",
+    "explanation": "'Verkäufer' bedeutet auf Englisch 'vendor'.",
+    "correct": "C"
+  },
+  {
+    "id": 98,
+    "word": "deprecate",
+    "sentence_en": "The software company decided to deprecate the old API.",
+    "meaning_de": {
+      "A": "gut",
+      "B": "Geld",
+      "C": "Abwerten",
+      "D": "Stuhl"
+    },
+    "meaning_fa": "کاهش ارزش، دیگر پشتیبانی نمی شود",
+    "explanation": "'Abwerten' bedeutet auf Englisch 'deprecate'.",
+    "correct": "C"
+  },
+  {
+    "id": 99,
+    "word": "excessive",
+    "sentence_en": "The excessive noise from the construction site was disturbing the residents.",
+    "meaning_de": {
+      "A": "zeigen",
+      "B": "gesund",
+      "C": "aktiv",
+      "D": "Übermäßig"
+    },
+    "meaning_fa": "بیش از حد، افراطی",
+    "explanation": "'Übermäßig' bedeutet auf Englisch 'excessive'.",
+    "correct": "D"
+  },
+  {
+    "id": 100,
+    "word": "restricted",
+    "sentence_en": "Access to the secure area is restricted to authorized personnel only.",
+    "meaning_de": {
+      "A": "Vater",
+      "B": "Körper",
+      "C": "faul",
+      "D": "Eingeschränkt"
+    },
+    "meaning_fa": "محدود شده، محدود",
+    "explanation": "'Eingeschränkt' bedeutet auf Englisch 'restricted'.",
+    "correct": "D"
+  },
+  {
+    "id": 101,
+    "word": "proper",
+    "sentence_en": "It's important to use the proper tools for the job.",
+    "meaning_de": {
+      "A": "Ordnungsgemäß",
+      "B": "Buch",
+      "C": "frisch",
+      "D": "schmutzig"
+    },
+    "meaning_fa": "به درستی، صحیح",
+    "explanation": "'Ordnungsgemäß' bedeutet auf Englisch 'proper'.",
+    "correct": "A"
+  },
+  {
+    "id": 102,
+    "word": "reviewing",
+    "sentence_en": "The team is reviewing the project requirements before proceeding.",
+    "meaning_de": {
+      "A": "Ort",
+      "B": "Überprüfen",
+      "C": "schreiben",
+      "D": "müde"
+    },
+    "meaning_fa": "بررسی کردن، مرور کردن",
+    "explanation": "'Überprüfen' bedeutet auf Englisch 'reviewing'.",
+    "correct": "B"
+  },
+  {
+    "id": 103,
+    "word": "executive",
+    "sentence_en": "The executive team is responsible for making major decisions.",
+    "meaning_de": {
+      "A": "Jahr",
+      "B": "trinken",
+      "C": "einfach",
+      "D": "Exekutive"
+    },
+    "meaning_fa": "مدیریت، اجرایی",
+    "explanation": "'Exekutive' bedeutet auf Englisch 'executive'.",
+    "correct": "D"
+  },
+  {
+    "id": 104,
+    "word": "corporate",
+    "sentence_en": "The corporate office is located in the city center.",
+    "meaning_de": {
+      "A": "Weg",
+      "B": "dumm",
+      "C": "Unternehmens-",
+      "D": "lecker"
+    },
+    "meaning_fa": "شرکتی، سازمانی",
+    "explanation": "'Unternehmens-' bedeutet auf Englisch 'corporate'.",
+    "correct": "C"
+  },
+  {
+    "id": 105,
+    "word": "gained",
+    "sentence_en": "She gained valuable experience during her internship.",
+    "meaning_de": {
+      "A": "Feuer",
+      "B": "lustig",
+      "C": "Teil",
+      "D": "Gewonnen"
+    },
+    "meaning_fa": "به دست آمده، کسب شده",
+    "explanation": "'Gewonnen' bedeutet auf Englisch 'gained'.",
+    "correct": "D"
+  },
+  {
+    "id": 106,
+    "word": "aspiring",
+    "sentence_en": "She is an aspiring artist who hopes to showcase her work.",
+    "meaning_de": {
+      "A": "Streben",
+      "B": "Baby",
+      "C": "Bein",
+      "D": "Leben"
+    },
+    "meaning_fa": "آرزو، تلاش",
+    "explanation": "'Streben' bedeutet auf Englisch 'aspiring'.",
+    "correct": "A"
+  },
+  {
+    "id": 107,
+    "word": "diverse",
+    "sentence_en": "The team is diverse, bringing together people from various backgrounds.",
+    "meaning_de": {
+      "A": "zeigen",
+      "B": "Vielfältig",
+      "C": "Telefon",
+      "D": "kompliziert"
+    },
+    "meaning_fa": "متنوع، گوناگون",
+    "explanation": "'Vielfältig' bedeutet auf Englisch 'diverse'.",
+    "correct": "B"
+  },
+  {
+    "id": 108,
+    "word": "measures",
+    "sentence_en": "The government implemented new measures to improve public safety.",
+    "meaning_de": {
+      "A": "schön",
+      "B": "sauber",
+      "C": "Maßnahmen",
+      "D": "gesund"
+    },
+    "meaning_fa": "اقدامات، تدابیر",
+    "explanation": "'Maßnahmen' bedeutet auf Englisch 'measures'.",
+    "correct": "C"
+  },
+  {
+    "id": 109,
+    "word": "distinguishing",
+    "sentence_en": "The distinguishing feature of the product is its unique design.",
+    "meaning_de": {
+      "A": "machen",
+      "B": "Freund",
+      "C": "Schritt",
+      "D": "Unterscheidungs-"
+    },
+    "meaning_fa": "تمایز، متمایز کننده",
+    "explanation": "'Unterscheidungs-' bedeutet auf Englisch 'distinguishing'.",
+    "correct": "D"
+  },
+  {
+    "id": 110,
+    "word": "interact",
+    "sentence_en": "The software allows users to interact with the interface easily.",
+    "meaning_de": {
+      "A": "teuer",
+      "B": "nehmen",
+      "C": "nennen",
+      "D": "Interagieren"
+    },
+    "meaning_fa": "تعامل، ارتباط برقرار کردن",
+    "explanation": "'Interagieren' bedeutet auf Englisch 'interact'.",
+    "correct": "D"
+  },
+  {
+    "id": 111,
+    "word": "allocate",
+    "sentence_en": "The project manager will allocate resources to the team.",
+    "meaning_de": {
+      "A": "Freund",
+      "B": "Feuer",
+      "C": "nett",
+      "D": "Zuweisen"
+    },
+    "meaning_fa": "اختصاص دادن، فراهم کردن",
+    "explanation": "'Zuweisen' bedeutet auf Englisch 'allocate'.",
+    "correct": "D"
+  },
+  {
+    "id": 112,
+    "word": "placement",
+    "sentence_en": "The placement of the equipment was carefully planned to optimize performance.",
+    "meaning_de": {
+      "A": "sehen",
+      "B": "leise",
+      "C": "klug",
+      "D": "Platzierung"
+    },
+    "meaning_fa": "قرارگیری، جایگذاری",
+    "explanation": "'Platzierung' bedeutet auf Englisch 'placement'.",
+    "correct": "D"
+  },
+  {
+    "id": 113,
+    "word": "indispensable",
+    "sentence_en": "The team leader is an indispensable part of the project.",
+    "meaning_de": {
+      "A": "reich",
+      "B": "verkaufen",
+      "C": "Unentbehrlich",
+      "D": "frisch"
+    },
+    "meaning_fa": "غیرقابل‌جایگزینی، ضروری",
+    "explanation": "'Unentbehrlich' bedeutet auf Englisch 'indispensable'.",
+    "correct": "C"
+  },
+  {
+    "id": 114,
+    "word": "insights",
+    "sentence_en": "The report provided valuable insights into customer behavior.",
+    "meaning_de": {
+      "A": "Stimme",
+      "B": "hell",
+      "C": "Einblicke",
+      "D": "nehmen"
+    },
+    "meaning_fa": "بینش‌ها، درک‌ها",
+    "explanation": "'Einblicke' bedeutet auf Englisch 'insights'.",
+    "correct": "C"
+  },
+  {
+    "id": 115,
+    "word": "that being said",
+    "sentence_en": "That being said, we should still consider other options.",
+    "meaning_de": {
+      "A": "Teil",
+      "B": "verlieren",
+      "C": "Das gesagt",
+      "D": "gesund"
+    },
+    "meaning_fa": "با این حال، باید گزینه‌های دیگر را نیز در نظر بگیریم.",
+    "explanation": "'Das gesagt' bedeutet auf Englisch 'that being said'.",
+    "correct": "C"
+  },
+  {
+    "id": 116,
+    "word": "assuming",
+    "sentence_en": "Assuming the project is approved, we can start next month.",
+    "meaning_de": {
+      "A": "altbacken",
+      "B": "Annehmen",
+      "C": "sauber",
+      "D": "Zimmer"
+    },
+    "meaning_fa": "فرض کردن، پیش‌فرض گرفتن",
+    "explanation": "'Annehmen' bedeutet auf Englisch 'assuming'.",
+    "correct": "B"
+  },
+  {
+    "id": 117,
+    "word": "dirt",
+    "sentence_en": "The children played in the dirt.",
+    "meaning_de": {
+      "A": "Zimmer",
+      "B": "werden",
+      "C": "Dreck",
+      "D": "sauber"
+    },
+    "meaning_fa": "کثافت، خاک",
+    "explanation": "'Dreck' bedeutet auf Englisch 'dirt'.",
+    "correct": "C"
+  },
+  {
+    "id": 118,
+    "word": "dirtiness",
+    "sentence_en": "The dirtiness of the room was unacceptable.",
+    "meaning_de": {
+      "A": "müde",
+      "B": "dumm",
+      "C": "hässlich",
+      "D": "Schmutzigkeit"
+    },
+    "meaning_fa": "کثیفی، ناپاکی",
+    "explanation": "'Schmutzigkeit' bedeutet auf Englisch 'dirtiness'.",
+    "correct": "D"
+  },
+  {
+    "id": 119,
+    "word": "even",
+    "sentence_en": "Even the smallest contribution can make a difference.",
+    "meaning_de": {
+      "A": "verstehen",
+      "B": "werden",
+      "C": "Finger",
+      "D": "Sogar"
+    },
+    "meaning_fa": "حتی، خود",
+    "explanation": "'Sogar' bedeutet auf Englisch 'even'.",
+    "correct": "D"
+  },
+  {
+    "id": 120,
+    "word": "debt",
+    "sentence_en": "He is working hard to pay off his debt.",
+    "meaning_de": {
+      "A": "Schuld",
+      "B": "neu",
+      "C": "Bruder",
+      "D": "treffen"
+    },
+    "meaning_fa": "بدهی، تعهد",
+    "explanation": "'Schuld' bedeutet auf Englisch 'debt'.",
+    "correct": "A"
+  },
+  {
+    "id": 121,
+    "word": "susceptible",
+    "sentence_en": "Children are more susceptible to certain diseases.",
+    "meaning_de": {
+      "A": "Anfällig",
+      "B": "Freund",
+      "C": "lustig",
+      "D": "Welt"
+    },
+    "meaning_fa": "حساس، مستعد",
+    "explanation": "'Anfällig' bedeutet auf Englisch 'susceptible'.",
+    "correct": "A"
+  },
+  {
+    "id": 122,
+    "word": "suffer",
+    "sentence_en": "Many people suffer from allergies in the spring.",
+    "meaning_de": {
+      "A": "Leiden",
+      "B": "Klang",
+      "C": "bescheiden",
+      "D": "Mädchen"
+    },
+    "meaning_fa": "رنج بردن، تحمل کردن",
+    "explanation": "'Leiden' bedeutet auf Englisch 'suffer'.",
+    "correct": "A"
+  },
+  {
+    "id": 123,
+    "word": "exploration",
+    "sentence_en": "The exploration of space is a fascinating subject.",
+    "meaning_de": {
+      "A": "Erforschung",
+      "B": "klein",
+      "C": "Büro",
+      "D": "müde"
+    },
+    "meaning_fa": "اکتشاف، کشف",
+    "explanation": "'Erforschung' bedeutet auf Englisch 'exploration'.",
+    "correct": "A"
+  },
+  {
+    "id": 124,
+    "word": "delves",
+    "sentence_en": "The research delves into the complexities of human behavior.",
+    "meaning_de": {
+      "A": "aktiv",
+      "B": "Eintauchen",
+      "C": "Wasser",
+      "D": "Tisch"
+    },
+    "meaning_fa": "غوطه‌ور شدن، عمیق شدن",
+    "explanation": "'Eintauchen' bedeutet auf Englisch 'delves'.",
+    "correct": "B"
+  },
+  {
+    "id": 125,
+    "word": "gather",
+    "sentence_en": "We need to gather more information before making a decision.",
+    "meaning_de": {
+      "A": "Versammeln",
+      "B": "Körper",
+      "C": "Mund",
+      "D": "gesund"
+    },
+    "meaning_fa": "جمع‌آوری، گردآوری",
+    "explanation": "'Versammeln' bedeutet auf Englisch 'gather'.",
+    "correct": "A"
+  },
+  {
+    "id": 126,
+    "word": "introduce",
+    "sentence_en": "Let me introduce you to our new team member.",
+    "meaning_de": {
+      "A": "schön",
+      "B": "Einführen",
+      "C": "Fenster",
+      "D": "klein"
+    },
+    "meaning_fa": "معرفی کردن، ارائه دادن",
+    "explanation": "'Einführen' bedeutet auf Englisch 'introduce'.",
+    "correct": "B"
+  },
+  {
+    "id": 127,
+    "word": "enhancement",
+    "sentence_en": "The software update includes several enhancements.",
+    "meaning_de": {
+      "A": "Verbesserung",
+      "B": "tun",
+      "C": "hell",
+      "D": "billig"
+    },
+    "meaning_fa": "بهبود، افزایش",
+    "explanation": "'Verbesserung' bedeutet auf Englisch 'enhancement'.",
+    "correct": "A"
+  },
+  {
+    "id": 128,
+    "word": "leverage",
+    "sentence_en": "We can leverage our existing resources to improve efficiency.",
+    "meaning_de": {
+      "A": "tun",
+      "B": "Boden",
+      "C": "Nutzen",
+      "D": "zeigen"
+    },
+    "meaning_fa": "استفاده، نفوذ",
+    "explanation": "'Nutzen' bedeutet auf Englisch 'leverage'.",
+    "correct": "C"
+  },
+  {
+    "id": 129,
+    "word": "encompasses",
+    "sentence_en": "The project encompasses a wide range of activities.",
+    "meaning_de": {
+      "A": "Umfassen",
+      "B": "leise",
+      "C": "trinken",
+      "D": "dunkel"
+    },
+    "meaning_fa": "شامل شدن، دربرگرفتن",
+    "explanation": "'Umfassen' bedeutet auf Englisch 'encompasses'.",
+    "correct": "A"
+  },
+  {
+    "id": 130,
+    "word": "preventing",
+    "sentence_en": "Preventing accidents is a top priority for the safety team.",
+    "meaning_de": {
+      "A": "Verhindern",
+      "B": "Frau",
+      "C": "zeigen",
+      "D": "Atem"
+    },
+    "meaning_fa": "جلوگیری کردن، پیشگیری",
+    "explanation": "'Verhindern' bedeutet auf Englisch 'preventing'.",
+    "correct": "A"
+  },
+  {
+    "id": 131,
+    "word": "evident",
+    "sentence_en": "The benefits of the new policy are evident in the results.",
+    "meaning_de": {
+      "A": "nennen",
+      "B": "Offensichtlich",
+      "C": "tun",
+      "D": "Anderen"
+    },
+    "meaning_fa": "مشهود، واضح",
+    "explanation": "'Offensichtlich' bedeutet auf Englisch 'evident'.",
+    "correct": "B"
+  },
+  {
+    "id": 132,
+    "word": "resilient",
+    "sentence_en": "The community is resilient and has recovered quickly from the disaster.",
+    "meaning_de": {
+      "A": "Widerstandsfähig",
+      "B": "Ort",
+      "C": "lecker",
+      "D": "sollen"
+    },
+    "meaning_fa": "مقاوم، انعطاف‌پذیر",
+    "explanation": "'Widerstandsfähig' bedeutet auf Englisch 'resilient'.",
+    "correct": "A"
+  },
+  {
+    "id": 133,
+    "word": "sustain",
+    "sentence_en": "We need to sustain our efforts to achieve long-term success.",
+    "meaning_de": {
+      "A": "wollen",
+      "B": "einfach",
+      "C": "Nacht",
+      "D": "Aufrechterhalten"
+    },
+    "meaning_fa": "حفظ کردن، پشتیبانی کردن",
+    "explanation": "'Aufrechterhalten' bedeutet auf Englisch 'sustain'.",
+    "correct": "D"
+  },
+  {
+    "id": 134,
+    "word": "redeploying",
+    "sentence_en": "The company is redeploying resources to focus on new projects.",
+    "meaning_de": {
+      "A": "Licht",
+      "B": "laut",
+      "C": "Umverteilung",
+      "D": "suchen"
+    },
+    "meaning_fa": "توزیع مجدد، تخصیص مجدد",
+    "explanation": "'Umverteilung' bedeutet auf Englisch 'redeploying'.",
+    "correct": "C"
+  },
+  {
+    "id": 135,
+    "word": "proficiency",
+    "sentence_en": "Her proficiency in multiple languages is impressive.",
+    "meaning_de": {
+      "A": "schicken",
+      "B": "Fähigkeit",
+      "C": "Fenster",
+      "D": "sehen"
+    },
+    "meaning_fa": "مهارت، صلاحیت",
+    "explanation": "'Fähigkeit' bedeutet auf Englisch 'proficiency'.",
+    "correct": "B"
+  },
+  {
+    "id": 136,
+    "word": "consideration",
+    "sentence_en": "The committee took several factors into consideration before making a decision.",
+    "meaning_de": {
+      "A": "Berücksichtigung",
+      "B": "groß",
+      "C": "Mutter",
+      "D": "schmutzig"
+    },
+    "meaning_fa": "ملاحظه، در نظر گرفتن",
+    "explanation": "'Berücksichtigung' bedeutet auf Englisch 'consideration'.",
+    "correct": "A"
+  },
+  {
+    "id": 137,
+    "word": "involves",
+    "sentence_en": "The project involves multiple stakeholders and requires careful planning.",
+    "meaning_de": {
+      "A": "trinken",
+      "B": "Baum",
+      "C": "dumm",
+      "D": "Beteiligen"
+    },
+    "meaning_fa": "شامل شدن، درگیر کردن",
+    "explanation": "'Beteiligen' bedeutet auf Englisch 'involves'.",
+    "correct": "D"
+  },
+  {
+    "id": 138,
+    "word": "preservation",
+    "sentence_en": "The preservation of historical sites is important for cultural heritage.",
+    "meaning_de": {
+      "A": "Erhaltung",
+      "B": "Bein",
+      "C": "Rücken",
+      "D": "müssen"
+    },
+    "meaning_fa": "حفظ، نگهداری",
+    "explanation": "'Erhaltung' bedeutet auf Englisch 'preservation'.",
+    "correct": "A"
+  },
+  {
+    "id": 139,
+    "word": "suitable",
+    "sentence_en": "This software is suitable for both beginners and advanced users.",
+    "meaning_de": {
+      "A": "Mutter",
+      "B": "Geeignet",
+      "C": "gesund",
+      "D": "reich"
+    },
+    "meaning_fa": "مناسب، صحیح",
+    "explanation": "'Geeignet' bedeutet auf Englisch 'suitable'.",
+    "correct": "B"
+  },
+  {
+    "id": 140,
+    "word": "obvious",
+    "sentence_en": "The solution to the problem was obvious once we analyzed the data.",
+    "meaning_de": {
+      "A": "frisch",
+      "B": "faul",
+      "C": "kompliziert",
+      "D": "Offensichtlich"
+    },
+    "meaning_fa": "مشهود، واضح",
+    "explanation": "'Offensichtlich' bedeutet auf Englisch 'obvious'.",
+    "correct": "D"
+  },
+  {
+    "id": 141,
+    "word": "distros",
+    "sentence_en": "There are many Linux distros available, each with its own features.",
+    "meaning_de": {
+      "A": "hässlich",
+      "B": "Distributionen",
+      "C": "Welt",
+      "D": "stolz"
+    },
+    "meaning_fa": "توزیع‌ها، دیسترو",
+    "explanation": "'Distributionen' bedeutet auf Englisch 'distros'.",
+    "correct": "B"
+  },
+  {
+    "id": 142,
+    "word": "distribution",
+    "sentence_en": "The distribution of resources was managed efficiently.",
+    "meaning_de": {
+      "A": "einfach",
+      "B": "schicken",
+      "C": "Telefon",
+      "D": "Verteilung"
+    },
+    "meaning_fa": "توزیع، پخش",
+    "explanation": "'Verteilung' bedeutet auf Englisch 'distribution'.",
+    "correct": "D"
+  },
+  {
+    "id": 143,
+    "word": "thereby",
+    "sentence_en": "The new policy was implemented, thereby improving efficiency.",
+    "meaning_de": {
+      "A": "fade",
+      "B": "Dadurch",
+      "C": "gut",
+      "D": "schreiben"
+    },
+    "meaning_fa": "بنابراین، به این ترتیب",
+    "explanation": "'Dadurch' bedeutet auf Englisch 'thereby'.",
+    "correct": "B"
+  },
+  {
+    "id": 144,
+    "word": "emphasizes",
+    "sentence_en": "The report emphasizes the importance of data security.",
+    "meaning_de": {
+      "A": "Betont",
+      "B": "Büro",
+      "C": "treffen",
+      "D": "teuer"
+    },
+    "meaning_fa": "تأکید می‌کند، برجسته می‌کند",
+    "explanation": "'Betont' bedeutet auf Englisch 'emphasizes'.",
+    "correct": "A"
+  },
+  {
+    "id": 145,
+    "word": "exploit",
+    "sentence_en": "The software was designed to exploit system vulnerabilities.",
+    "meaning_de": {
+      "A": "Ausnutzen",
+      "B": "kompliziert",
+      "C": "trinken",
+      "D": "Freund"
+    },
+    "meaning_fa": "سوءاستفاده کردن، بهره‌برداری کردن",
+    "explanation": "'Ausnutzen' bedeutet auf Englisch 'exploit'.",
+    "correct": "A"
+  },
+  {
+    "id": 146,
+    "word": "cornerstone",
+    "sentence_en": "Trust is the cornerstone of any successful relationship.",
+    "meaning_de": {
+      "A": "krank",
+      "B": "Tür",
+      "C": "Baum",
+      "D": "Grundpfeiler"
+    },
+    "meaning_fa": "سنگ بنای، اساس",
+    "explanation": "'Grundpfeiler' bedeutet auf Englisch 'cornerstone'.",
+    "correct": "D"
+  },
+  {
+    "id": 147,
+    "word": "possession",
+    "sentence_en": "The possession of illegal drugs is a serious offense.",
+    "meaning_de": {
+      "A": "Besitz",
+      "B": "Schulter",
+      "C": "Junge",
+      "D": "schmutzig"
+    },
+    "meaning_fa": "مالکیت، دارایی",
+    "explanation": "'Besitz' bedeutet auf Englisch 'possession'.",
+    "correct": "A"
+  },
+  {
+    "id": 148,
+    "word": "stolen",
+    "sentence_en": "The stolen car was found abandoned in a parking lot.",
+    "meaning_de": {
+      "A": "sein",
+      "B": "unterschreiben",
+      "C": "Gestohlen",
+      "D": "Sache"
+    },
+    "meaning_fa": "دزدیده شده، سرقت شده",
+    "explanation": "'Gestohlen' bedeutet auf Englisch 'stolen'.",
+    "correct": "C"
+  },
+  {
+    "id": 149,
+    "word": "compromised",
+    "sentence_en": "The security breach compromised sensitive data.",
+    "meaning_de": {
+      "A": "Tür",
+      "B": "dumm",
+      "C": "jung",
+      "D": "Kompromittiert"
+    },
+    "meaning_fa": "به خطر افتاده، آسیب دیده",
+    "explanation": "'Kompromittiert' bedeutet auf Englisch 'compromised'.",
+    "correct": "D"
+  },
+  {
+    "id": 150,
+    "word": "interoperability",
+    "sentence_en": "Interoperability between different systems is crucial for seamless communication.",
+    "meaning_de": {
+      "A": "Frau",
+      "B": "Gesicht",
+      "C": "gut",
+      "D": "Interoperabilität"
+    },
+    "meaning_fa": "قابلیت همکاری، سازگاری",
+    "explanation": "'Interoperabilität' bedeutet auf Englisch 'interoperability'.",
+    "correct": "D"
+  },
+  {
+    "id": 151,
+    "word": "relies",
+    "sentence_en": "The success of the project relies on effective teamwork.",
+    "meaning_de": {
+      "A": "schön",
+      "B": "warm",
+      "C": "Verlässt sich",
+      "D": "Haus"
+    },
+    "meaning_fa": "متکی است، وابسته است",
+    "explanation": "'Verlässt sich' bedeutet auf Englisch 'relies'.",
+    "correct": "C"
+  },
+  {
+    "id": 152,
+    "word": "interception",
+    "sentence_en": "The interception of the message prevented a potential security breach.",
+    "meaning_de": {
+      "A": "heiß",
+      "B": "Abfangen",
+      "C": "Stimme",
+      "D": "wachsen"
+    },
+    "meaning_fa": "گرفتن، قطع ارتباط",
+    "explanation": "'Abfangen' bedeutet auf Englisch 'interception'.",
+    "correct": "B"
+  },
+  {
+    "id": 153,
+    "word": "Despite",
+    "sentence_en": "Despite the challenges, the team managed to complete the project on time.",
+    "meaning_de": {
+      "A": "Schulter",
+      "B": "Baby",
+      "C": "bescheiden",
+      "D": "Trotz"
+    },
+    "meaning_fa": "با وجود، علی‌رغم",
+    "explanation": "'Trotz' bedeutet auf Englisch 'Despite'.",
+    "correct": "D"
+  },
+  {
+    "id": 154,
+    "word": "confined",
+    "sentence_en": "The patient was confined to bed rest for a week.",
+    "meaning_de": {
+      "A": "Tatsache",
+      "B": "heiß",
+      "C": "Begrenzt",
+      "D": "frisch"
+    },
+    "meaning_fa": "محدود شده، محصور شده",
+    "explanation": "'Begrenzt' bedeutet auf Englisch 'confined'.",
+    "correct": "C"
+  },
+  {
+    "id": 155,
+    "word": "realms",
+    "sentence_en": "The realms of science and technology are constantly evolving.",
+    "meaning_de": {
+      "A": "neu",
+      "B": "Name",
+      "C": "Bereiche",
+      "D": "hässlich"
+    },
+    "meaning_fa": "حوزه‌ها، قلمروها",
+    "explanation": "'Bereiche' bedeutet auf Englisch 'realms'.",
+    "correct": "C"
+  },
+  {
+    "id": 156,
+    "word": "adopted",
+    "sentence_en": "The company adopted a new policy to improve employee satisfaction.",
+    "meaning_de": {
+      "A": "leise",
+      "B": "Angepasst",
+      "C": "klug",
+      "D": "sein"
+    },
+    "meaning_fa": "پذیرفته شده، اتخاذ شده",
+    "explanation": "'Angepasst' bedeutet auf Englisch 'adopted'.",
+    "correct": "B"
+  },
+  {
+    "id": 157,
+    "word": "equipping",
+    "sentence_en": "The school is equipping classrooms with the latest technology.",
+    "meaning_de": {
+      "A": "Stadt",
+      "B": "Rücken",
+      "C": "Ausrüsten",
+      "D": "Tisch"
+    },
+    "meaning_fa": "تجهیز کردن، آماده‌سازی",
+    "explanation": "'Ausrüsten' bedeutet auf Englisch 'equipping'.",
+    "correct": "C"
+  },
+  {
+    "id": 158,
+    "word": "consciously",
+    "sentence_en": "She made a conscious effort to improve her time management skills.",
+    "meaning_de": {
+      "A": "Bewusst",
+      "B": "lernen",
+      "C": "frisch",
+      "D": "müssen"
+    },
+    "meaning_fa": "آگاهانه، عمدی",
+    "explanation": "'Bewusst' bedeutet auf Englisch 'consciously'.",
+    "correct": "A"
+  },
+  {
+    "id": 159,
+    "word": "conscious",
+    "sentence_en": "He was conscious of the impact his actions would have on the team.",
+    "meaning_de": {
+      "A": "Stimme",
+      "B": "Bewusst",
+      "C": "Baby",
+      "D": "Tag"
+    },
+    "meaning_fa": "آگاه، هوشیار",
+    "explanation": "'Bewusst' bedeutet auf Englisch 'conscious'.",
+    "correct": "B"
+  },
+  {
+    "id": 160,
+    "word": "occupies",
+    "sentence_en": "The role of the manager occupies a central position in the organization.",
+    "meaning_de": {
+      "A": "Licht",
+      "B": "ängstlich",
+      "C": "Mann",
+      "D": "Besetzt"
+    },
+    "meaning_fa": "اشغال کردن، تصرف کردن",
+    "explanation": "'Besetzt' bedeutet auf Englisch 'occupies'.",
+    "correct": "D"
+  },
+  {
+    "id": 161,
+    "word": "invokes",
+    "sentence_en": "The software invokes several APIs to retrieve data.",
+    "meaning_de": {
+      "A": "dunkel",
+      "B": "leise",
+      "C": "verstehen",
+      "D": "Aufruft"
+    },
+    "meaning_fa": "فراخوانی می‌کند، درخواست می‌کند",
+    "explanation": "'Aufruft' bedeutet auf Englisch 'invokes'.",
+    "correct": "D"
+  },
+  {
+    "id": 162,
+    "word": "elevated",
+    "sentence_en": "The elevated train provides a unique view of the city.",
+    "meaning_de": {
+      "A": "Vater",
+      "B": "Glas",
+      "C": "schön",
+      "D": "Erhöht"
+    },
+    "meaning_fa": "بالا رفته، بلند شده",
+    "explanation": "'Erhöht' bedeutet auf Englisch 'elevated'.",
+    "correct": "D"
+  },
+  {
+    "id": 163,
+    "word": "distributed",
+    "sentence_en": "The distributed system allows for better resource management.",
+    "meaning_de": {
+      "A": "Verteilt",
+      "B": "Gesicht",
+      "C": "Tag",
+      "D": "Feuer"
+    },
+    "meaning_fa": "توزیع شده، پخش شده",
+    "explanation": "'Verteilt' bedeutet auf Englisch 'distributed'.",
+    "correct": "A"
+  },
+  {
+    "id": 164,
+    "word": "assessed",
+    "sentence_en": "The project's risks were assessed before proceeding.",
+    "meaning_de": {
+      "A": "Bewertet",
+      "B": "Monat",
+      "C": "Arbeit",
+      "D": "Buch"
+    },
+    "meaning_fa": "ارزیابی شده، تخمین زده شده",
+    "explanation": "'Bewertet' bedeutet auf Englisch 'assessed'.",
+    "correct": "A"
+  },
+  {
+    "id": 165,
+    "word": "mentions",
+    "sentence_en": "The report mentions several key findings from the research.",
+    "meaning_de": {
+      "A": "unterschreiben",
+      "B": "Erwähnt",
+      "C": "stolz",
+      "D": "Buch"
+    },
+    "meaning_fa": "ذکر می‌کند، اشاره می‌کند",
+    "explanation": "'Erwähnt' bedeutet auf Englisch 'mentions'.",
+    "correct": "B"
+  },
+  {
+    "id": 166,
+    "word": "driving me crazy",
+    "sentence_en": "The constant noise from the construction site is driving me crazy.",
+    "meaning_de": {
+      "A": "Macht mich verrückt",
+      "B": "verlieren",
+      "C": "krank",
+      "D": "Mund"
+    },
+    "meaning_fa": "دارم دیوانه می‌شوم",
+    "explanation": "'Macht mich verrückt' bedeutet auf Englisch 'driving me crazy'.",
+    "correct": "A"
+  },
+  {
+    "id": 167,
+    "word": "it won't print",
+    "sentence_en": "The printer is malfunctioning; it won't print any documents.",
+    "meaning_de": {
+      "A": "lernen",
+      "B": "einfach",
+      "C": "Blut",
+      "D": "Es druckt nicht"
+    },
+    "meaning_fa": "پرینتر کار نمی‌کند",
+    "explanation": "'Es druckt nicht' bedeutet auf Englisch 'it won't print'.",
+    "correct": "D"
+  },
+  {
+    "id": 168,
+    "word": "Don't bother",
+    "sentence_en": "Don't bother trying to fix it; it's beyond repair.",
+    "meaning_de": {
+      "A": "aktiv",
+      "B": "Leute",
+      "C": "kalt",
+      "D": "Mach dir keine Mühe"
+    },
+    "meaning_fa": "زحمت نکش، تلاش نکن",
+    "explanation": "'Mach dir keine Mühe' bedeutet auf Englisch 'Don't bother'.",
+    "correct": "D"
+  },
+  {
+    "id": 169,
+    "word": "obsolete",
+    "sentence_en": "The technology is now considered obsolete and has been replaced by newer systems.",
+    "meaning_de": {
+      "A": "schön",
+      "B": "Büro",
+      "C": "verlieren",
+      "D": "Veraltet"
+    },
+    "meaning_fa": "منسوخ، قدیمی",
+    "explanation": "'Veraltet' bedeutet auf Englisch 'obsolete'.",
+    "correct": "D"
+  },
+  {
+    "id": 170,
+    "word": "under suspicion",
+    "sentence_en": "The employee was under suspicion of leaking confidential information.",
+    "meaning_de": {
+      "A": "schön",
+      "B": "werden",
+      "C": "Unter Verdacht",
+      "D": "Sache"
+    },
+    "meaning_fa": "زیر سوال، مشکوک",
+    "explanation": "'Unter Verdacht' bedeutet auf Englisch 'under suspicion'.",
+    "correct": "C"
+  },
+  {
+    "id": 171,
+    "word": "precaution",
+    "sentence_en": "Taking precautions can help prevent accidents in the workplace.",
+    "meaning_de": {
+      "A": "jung",
+      "B": "alt",
+      "C": "Vorsichtsmaßnahme",
+      "D": "Glas"
+    },
+    "meaning_fa": "اقدام احتیاطی، پیشگیری",
+    "explanation": "'Vorsichtsmaßnahme' bedeutet auf Englisch 'precaution'.",
+    "correct": "C"
+  },
+  {
+    "id": 172,
+    "word": "anyway",
+    "sentence_en": "I didn't like the movie, but I went to see it anyway.",
+    "meaning_de": {
+      "A": "Trotzdem",
+      "B": "Stuhl",
+      "C": "Lippe",
+      "D": "sparen"
+    },
+    "meaning_fa": "به هر حال، در هر صورت",
+    "explanation": "'Trotzdem' bedeutet auf Englisch 'anyway'.",
+    "correct": "A"
+  },
+  {
+    "id": 173,
+    "word": "intercepts",
+    "sentence_en": "The security system intercepts unauthorized access attempts.",
+    "meaning_de": {
+      "A": "Abfängt",
+      "B": "Monat",
+      "C": "Frau",
+      "D": "nehmen"
+    },
+    "meaning_fa": "گرفتن، قطع کردن",
+    "explanation": "'Abfängt' bedeutet auf Englisch 'intercepts'.",
+    "correct": "A"
+  },
+  {
+    "id": 174,
+    "word": "remediation",
+    "sentence_en": "The company implemented remediation measures to address the security vulnerabilities.",
+    "meaning_de": {
+      "A": "werden",
+      "B": "sauber",
+      "C": "Behebung",
+      "D": "Hand"
+    },
+    "meaning_fa": "اصلاح، ترمیم",
+    "explanation": "'Behebung' bedeutet auf Englisch 'remediation'.",
+    "correct": "C"
+  },
+  {
+    "id": 175,
+    "word": "Conclusion",
+    "sentence_en": "In conclusion, the project was a success and met all objectives.",
+    "meaning_de": {
+      "A": "ängstlich",
+      "B": "Tatsache",
+      "C": "Schlussfolgerung",
+      "D": "Name"
+    },
+    "meaning_fa": "نتیجه‌گیری، جمع‌بندی",
+    "explanation": "'Schlussfolgerung' bedeutet auf Englisch 'Conclusion'.",
+    "correct": "C"
+  },
+  {
+    "id": 176,
+    "word": "Prohibited",
+    "sentence_en": "Smoking is prohibited in all public buildings.",
+    "meaning_de": {
+      "A": "Leben",
+      "B": "Verboten",
+      "C": "Sache",
+      "D": "Leute"
+    },
+    "meaning_fa": "ممنوع، غیرمجاز",
+    "explanation": "'Verboten' bedeutet auf Englisch 'Prohibited'.",
+    "correct": "B"
+  },
+  {
+    "id": 177,
+    "word": "inconvenience",
+    "sentence_en": "We apologize for any inconvenience caused by the delay.",
+    "meaning_de": {
+      "A": "schmutzig",
+      "B": "sprechen",
+      "C": "Rücken",
+      "D": "Unannehmlichkeit"
+    },
+    "meaning_fa": "ناراحتی، مزاحمت",
+    "explanation": "'Unannehmlichkeit' bedeutet auf Englisch 'inconvenience'.",
+    "correct": "D"
+  },
+  {
+    "id": 178,
+    "word": "concerned",
+    "sentence_en": "The manager is concerned about the project's progress.",
+    "meaning_de": {
+      "A": "Mann",
+      "B": "schicken",
+      "C": "werden",
+      "D": "Besorgt"
+    },
+    "meaning_fa": "نگران، مربوط",
+    "explanation": "'Besorgt' bedeutet auf Englisch 'concerned'.",
+    "correct": "D"
+  },
+  {
+    "id": 179,
+    "word": "occasionally",
+    "sentence_en": "We occasionally hold team-building events to improve morale.",
+    "meaning_de": {
+      "A": "lernen",
+      "B": "Junge",
+      "C": "alt",
+      "D": "Gelegentlich"
+    },
+    "meaning_fa": "گاهی اوقات، گهگاه",
+    "explanation": "'Gelegentlich' bedeutet auf Englisch 'occasionally'.",
+    "correct": "D"
+  },
+  {
+    "id": 180,
+    "word": "infect",
+    "sentence_en": "The virus can infect computers through malicious software.",
+    "meaning_de": {
+      "A": "Infizieren",
+      "B": "arm",
+      "C": "Baum",
+      "D": "Welt"
+    },
+    "meaning_fa": "آلوده کردن، عفونی کردن",
+    "explanation": "'Infizieren' bedeutet auf Englisch 'infect'.",
+    "correct": "A"
+  },
+  {
+    "id": 181,
+    "word": "realizes",
+    "sentence_en": "She realizes the importance of regular backups to prevent data loss.",
+    "meaning_de": {
+      "A": "altmodisch",
+      "B": "Boden",
+      "C": "Junge",
+      "D": "Erkennt"
+    },
+    "meaning_fa": "درک می‌کند، متوجه می‌شود",
+    "explanation": "'Erkennt' bedeutet auf Englisch 'realizes'.",
+    "correct": "D"
+  },
+  {
+    "id": 182,
+    "word": "participants",
+    "sentence_en": "The participants in the workshop shared their experiences and insights.",
+    "meaning_de": {
+      "A": "lustig",
+      "B": "Tatsache",
+      "C": "reich",
+      "D": "Teilnehmer"
+    },
+    "meaning_fa": "شرکت‌کنندگان، مشارکت‌کنندگان",
+    "explanation": "'Teilnehmer' bedeutet auf Englisch 'participants'.",
+    "correct": "D"
+  },
+  {
+    "id": 183,
+    "word": "avoid distractions",
+    "sentence_en": "To be productive, it's important to avoid distractions while working.",
+    "meaning_de": {
+      "A": "Tür",
+      "B": "Ablenkungen vermeiden",
+      "C": "lecker",
+      "D": "zahlen"
+    },
+    "meaning_fa": "از حواس‌پرتی‌ها پرهیز کنید",
+    "explanation": "'Ablenkungen vermeiden' bedeutet auf Englisch 'avoid distractions'.",
+    "correct": "B"
+  },
+  {
+    "id": 184,
+    "word": "attempting",
+    "sentence_en": "The team is attempting to resolve the issue as quickly as possible.",
+    "meaning_de": {
+      "A": "Verstand",
+      "B": "Monat",
+      "C": "Versuchen",
+      "D": "Fenster"
+    },
+    "meaning_fa": "تلاش کردن، کوشش کردن",
+    "explanation": "'Versuchen' bedeutet auf Englisch 'attempting'.",
+    "correct": "C"
+  },
+  {
+    "id": 185,
+    "word": "compliance",
+    "sentence_en": "The company is committed to ensuring compliance with all regulations.",
+    "meaning_de": {
+      "A": "Stimme",
+      "B": "Einhaltung",
+      "C": "unfreundlich",
+      "D": "Licht"
+    },
+    "meaning_fa": "رعایت، تطابق",
+    "explanation": "'Einhaltung' bedeutet auf Englisch 'compliance'.",
+    "correct": "B"
+  },
+  {
+    "id": 186,
+    "word": "a user claims",
+    "sentence_en": "A user claims that the software has improved their productivity.",
+    "meaning_de": {
+      "A": "Ein Benutzer behauptet",
+      "B": "Arbeit",
+      "C": "hässlich",
+      "D": "Leute"
+    },
+    "meaning_fa": "یک کاربر ادعا می‌کند",
+    "explanation": "'Ein Benutzer behauptet' bedeutet auf Englisch 'a user claims'.",
+    "correct": "A"
+  },
+  {
+    "id": 187,
+    "word": "instruct",
+    "sentence_en": "The teacher will instruct the students on how to use the new software.",
+    "meaning_de": {
+      "A": "Feuer",
+      "B": "Anweisen",
+      "C": "Tatsache",
+      "D": "vergleichen"
+    },
+    "meaning_fa": "دستور دادن، آموزش دادن",
+    "explanation": "'Anweisen' bedeutet auf Englisch 'instruct'.",
+    "correct": "B"
+  },
+  {
+    "id": 188,
+    "word": "indicate",
+    "sentence_en": "The data indicates a significant increase in sales over the last quarter.",
+    "meaning_de": {
+      "A": "Lippe",
+      "B": "Anzeigen",
+      "C": "Stimme",
+      "D": "heiß"
+    },
+    "meaning_fa": "نشان دادن، اشاره کردن",
+    "explanation": "'Anzeigen' bedeutet auf Englisch 'indicate'.",
+    "correct": "B"
+  },
+  {
+    "id": 189,
+    "word": "unwanted",
+    "sentence_en": "The email filter helps to block unwanted messages.",
+    "meaning_de": {
+      "A": "frisch",
+      "B": "Gesicht",
+      "C": "Unerwünscht",
+      "D": "Buch"
+    },
+    "meaning_fa": "ناخواسته، ناخواسته",
+    "explanation": "'Unerwünscht' bedeutet auf Englisch 'unwanted'.",
+    "correct": "C"
+  },
+  {
+    "id": 190,
+    "word": "inadvertent",
+    "sentence_en": "The inadvertent deletion of files caused significant data loss.",
+    "meaning_de": {
+      "A": "Unbeabsichtigt",
+      "B": "Stuhl",
+      "C": "stolz",
+      "D": "Jahr"
+    },
+    "meaning_fa": "غیر عمدی، سهوی",
+    "explanation": "'Unbeabsichtigt' bedeutet auf Englisch 'inadvertent'.",
+    "correct": "A"
+  },
+  {
+    "id": 191,
+    "word": "disquise",
+    "sentence_en": "He tried to disquise his identity by wearing a hat and sunglasses.",
+    "meaning_de": {
+      "A": "laut",
+      "B": "arm",
+      "C": "Geld",
+      "D": "Verkleidung"
+    },
+    "meaning_fa": "پوشش، استتار، تغییر چهره",
+    "explanation": "'Verkleidung' bedeutet auf Englisch 'disquise'.",
+    "correct": "D"
+  },
+  {
+    "id": 192,
+    "word": "what poses",
+    "sentence_en": "What poses a challenge for the team is the tight deadline.",
+    "meaning_de": {
+      "A": "Geld",
+      "B": "heiß",
+      "C": "Bein",
+      "D": "Was darstellt"
+    },
+    "meaning_fa": "چه چیزی چالشی برای تیم ایجاد می‌کند",
+    "explanation": "'Was darstellt' bedeutet auf Englisch 'what poses'.",
+    "correct": "D"
+  },
+  {
+    "id": 193,
+    "word": "mitigate",
+    "sentence_en": "The company implemented measures to mitigate the risks associated with the project.",
+    "meaning_de": {
+      "A": "Körper",
+      "B": "billig",
+      "C": "Mildern",
+      "D": "wollen"
+    },
+    "meaning_fa": "کاهش دادن، تخفیف دادن",
+    "explanation": "'Mildern' bedeutet auf Englisch 'mitigate'.",
+    "correct": "C"
+  },
+  {
+    "id": 194,
+    "word": "safeguard",
+    "sentence_en": "The organization has implemented strict policies to safeguard sensitive information.",
+    "meaning_de": {
+      "A": "Licht",
+      "B": "Schützen",
+      "C": "Kopf",
+      "D": "Kind"
+    },
+    "meaning_fa": "محافظت کردن، ایمن کردن",
+    "explanation": "'Schützen' bedeutet auf Englisch 'safeguard'.",
+    "correct": "B"
+  },
+  {
+    "id": 195,
+    "word": "adversaries",
+    "sentence_en": "The company must stay vigilant against potential adversaries in the market.",
+    "meaning_de": {
+      "A": "Gegner",
+      "B": "müde",
+      "C": "Gesicht",
+      "D": "Blut"
+    },
+    "meaning_fa": "رقبا، دشمنان",
+    "explanation": "'Gegner' bedeutet auf Englisch 'adversaries'.",
+    "correct": "A"
+  },
+  {
+    "id": 196,
+    "word": "greater",
+    "sentence_en": "The new strategy aims to achieve greater efficiency and productivity.",
+    "meaning_de": {
+      "A": "Atem",
+      "B": "ängstlich",
+      "C": "Größer",
+      "D": "sollen"
+    },
+    "meaning_fa": "بزرگتر، بیشتر",
+    "explanation": "'Größer' bedeutet auf Englisch 'greater'.",
+    "correct": "C"
+  },
+  {
+    "id": 197,
+    "word": "arbitrary",
+    "sentence_en": "The decision to change the project scope seemed arbitrary and lacked clear justification.",
+    "meaning_de": {
+      "A": "Willkürlich",
+      "B": "Ehefrau",
+      "C": "sprechen",
+      "D": "wachsen"
+    },
+    "meaning_fa": "دلخواه، خودسرانه",
+    "explanation": "'Willkürlich' bedeutet auf Englisch 'arbitrary'.",
+    "correct": "A"
+  },
+  {
+    "id": 198,
+    "word": "attract",
+    "sentence_en": "The new marketing campaign aims to attract more customers.",
+    "meaning_de": {
+      "A": "Anziehen",
+      "B": "Bruder",
+      "C": "Büro",
+      "D": "reich"
+    },
+    "meaning_fa": "جذب کردن، جذب",
+    "explanation": "'Anziehen' bedeutet auf Englisch 'attract'.",
+    "correct": "A"
+  },
+  {
+    "id": 199,
+    "word": "retention",
+    "sentence_en": "Employee retention is a key focus for the HR department.",
+    "meaning_de": {
+      "A": "lustig",
+      "B": "Linie",
+      "C": "dumm",
+      "D": "Bindung"
+    },
+    "meaning_fa": "نگهداری، حفظ",
+    "explanation": "'Bindung' bedeutet auf Englisch 'retention'.",
+    "correct": "D"
+  },
+  {
+    "id": 200,
+    "word": "mentioned",
+    "sentence_en": "The report mentioned several important findings from the research.",
+    "meaning_de": {
+      "A": "Glas",
+      "B": "Lippe",
+      "C": "Tag",
+      "D": "Erwähnt"
+    },
+    "meaning_fa": "ذکر شده، اشاره شده",
+    "explanation": "'Erwähnt' bedeutet auf Englisch 'mentioned'.",
+    "correct": "D"
+  },
+  {
+    "id": 201,
+    "word": "sophisticated",
+    "sentence_en": "The new software features a sophisticated user interface.",
+    "meaning_de": {
+      "A": "Raffiniert",
+      "B": "langsam",
+      "C": "Tisch",
+      "D": "Schulter"
+    },
+    "meaning_fa": "پیشرفته، پیچیده",
+    "explanation": "'Raffiniert' bedeutet auf Englisch 'sophisticated'.",
+    "correct": "A"
+  },
+  {
+    "id": 202,
+    "word": "exploits",
+    "sentence_en": "The software exploits vulnerabilities in the system to gain unauthorized access.",
+    "meaning_de": {
+      "A": "jung",
+      "B": "Klang",
+      "C": "Körper",
+      "D": "Ausnutzt"
+    },
+    "meaning_fa": "سوءاستفاده می‌کند، بهره‌برداری می‌کند",
+    "explanation": "'Ausnutzt' bedeutet auf Englisch 'exploits'.",
+    "correct": "D"
+  },
+  {
+    "id": 203,
+    "word": "deception",
+    "sentence_en": "The company's deceptive marketing practices were exposed by a consumer watchdog.",
+    "meaning_de": {
+      "A": "Täuschung",
+      "B": "Sache",
+      "C": "zeigen",
+      "D": "krank"
+    },
+    "meaning_fa": "فریب، نیرنگ",
+    "explanation": "'Täuschung' bedeutet auf Englisch 'deception'.",
+    "correct": "A"
+  },
+  {
+    "id": 204,
+    "word": "exfiltration",
+    "sentence_en": "The security team detected an attempt at data exfiltration from the network.",
+    "meaning_de": {
+      "A": "Schulter",
+      "B": "nehmen",
+      "C": "Name",
+      "D": "Exfiltration"
+    },
+    "meaning_fa": "خروج اطلاعات، استخراج",
+    "explanation": "'Exfiltration' bedeutet auf Englisch 'exfiltration'.",
+    "correct": "D"
+  },
+  {
+    "id": 205,
+    "word": "adversary",
+    "sentence_en": "The company must stay vigilant against potential adversaries in the market.",
+    "meaning_de": {
+      "A": "Haus",
+      "B": "Gegner",
+      "C": "Linie",
+      "D": "faul"
+    },
+    "meaning_fa": "رقیب، دشمن",
+    "explanation": "'Gegner' bedeutet auf Englisch 'adversary'.",
+    "correct": "B"
+  },
+  {
+    "id": 206,
+    "word": "spear phishing",
+    "sentence_en": "Spear phishing attacks target specific individuals or organizations with personalized messages.",
+    "meaning_de": {
+      "A": "nehmen",
+      "B": "teuer",
+      "C": "Gezieltes Phishing",
+      "D": "kalt"
+    },
+    "meaning_fa": "فیشینگ هدفمند",
+    "explanation": "'Gezieltes Phishing' bedeutet auf Englisch 'spear phishing'.",
+    "correct": "C"
+  },
+  {
+    "id": 207,
+    "word": "credential",
+    "sentence_en": "The user must provide valid credentials to access the system.",
+    "meaning_de": {
+      "A": "billig",
+      "B": "klug",
+      "C": "Berechtigungsnachweis",
+      "D": "Stimme"
+    },
+    "meaning_fa": "مدرک، گواهی‌نامه",
+    "explanation": "'Berechtigungsnachweis' bedeutet auf Englisch 'credential'.",
+    "correct": "C"
+  },
+  {
+    "id": 208,
+    "word": "resilience",
+    "sentence_en": "The company's resilience in the face of challenges has been impressive.",
+    "meaning_de": {
+      "A": "Ort",
+      "B": "treffen",
+      "C": "Sache",
+      "D": "Widerstandsfähigkeit"
+    },
+    "meaning_fa": "مقاومت، تاب‌آوری",
+    "explanation": "'Widerstandsfähigkeit' bedeutet auf Englisch 'resilience'.",
+    "correct": "D"
+  },
+  {
+    "id": 209,
+    "word": "neatly",
+    "sentence_en": "The documents were neatly organized in labeled folders.",
+    "meaning_de": {
+      "A": "klein",
+      "B": "warm",
+      "C": "Zimmer",
+      "D": "Ordentlich"
+    },
+    "meaning_fa": "مرتب، منظم",
+    "explanation": "'Ordentlich' bedeutet auf Englisch 'neatly'.",
+    "correct": "D"
+  },
+  {
+    "id": 210,
+    "word": "approach",
+    "sentence_en": "The team is taking a new approach to solving the problem.",
+    "meaning_de": {
+      "A": "nennen",
+      "B": "Ansatz",
+      "C": "Blut",
+      "D": "Tatsache"
+    },
+    "meaning_fa": "رویکرد، روش",
+    "explanation": "'Ansatz' bedeutet auf Englisch 'approach'.",
+    "correct": "B"
+  },
+  {
+    "id": 211,
+    "word": "affected",
+    "sentence_en": "The new policy affected all employees in the organization.",
+    "meaning_de": {
+      "A": "dumm",
+      "B": "Betroffen",
+      "C": "Stimme",
+      "D": "Atem"
+    },
+    "meaning_fa": "متأثر شده، تحت تأثیر قرار گرفته",
+    "explanation": "'Betroffen' bedeutet auf Englisch 'affected'.",
+    "correct": "B"
+  },
+  {
+    "id": 212,
+    "word": "unintended",
+    "sentence_en": "The unintended consequences of the decision were not anticipated.",
+    "meaning_de": {
+      "A": "stehen",
+      "B": "groß",
+      "C": "kompliziert",
+      "D": "Unbeabsichtigt"
+    },
+    "meaning_fa": "غیر عمدی، ناخواسته",
+    "explanation": "'Unbeabsichtigt' bedeutet auf Englisch 'unintended'.",
+    "correct": "D"
+  },
+  {
+    "id": 213,
+    "word": "exfiltrate",
+    "sentence_en": "The hacker attempted to exfiltrate sensitive data from the network.",
+    "meaning_de": {
+      "A": "Exfiltrieren",
+      "B": "zeigen",
+      "C": "wachsen",
+      "D": "sollen"
+    },
+    "meaning_fa": "استخراج کردن، خارج کردن",
+    "explanation": "'Exfiltrieren' bedeutet auf Englisch 'exfiltrate'.",
+    "correct": "A"
+  },
+  {
+    "id": 214,
+    "word": "arise",
+    "sentence_en": "Problems may arise if the project is not properly managed.",
+    "meaning_de": {
+      "A": "Entstehen",
+      "B": "zeigen",
+      "C": "stehen",
+      "D": "frisch"
+    },
+    "meaning_fa": "پدید آمدن، بوجود آمدن",
+    "explanation": "'Entstehen' bedeutet auf Englisch 'arise'.",
+    "correct": "A"
+  },
+  {
+    "id": 215,
+    "word": "decisions",
+    "sentence_en": "The manager is responsible for making important decisions for the team.",
+    "meaning_de": {
+      "A": "Entscheidungen",
+      "B": "aktiv",
+      "C": "bescheiden",
+      "D": "Zimmer"
+    },
+    "meaning_fa": "تصمیمات، تصمیم‌گیری‌ها",
+    "explanation": "'Entscheidungen' bedeutet auf Englisch 'decisions'.",
+    "correct": "A"
+  },
+  {
+    "id": 216,
+    "word": "widely",
+    "sentence_en": "The new product has been widely adopted by customers.",
+    "meaning_de": {
+      "A": "unterschreiben",
+      "B": "warm",
+      "C": "Weit verbreitet",
+      "D": "Buch"
+    },
+    "meaning_fa": "به طور گسترده، وسیع",
+    "explanation": "'Weit verbreitet' bedeutet auf Englisch 'widely'.",
+    "correct": "C"
+  },
+  {
+    "id": 217,
+    "word": "unintentionally",
+    "sentence_en": "The software bug caused the system to crash unintentionally.",
+    "meaning_de": {
+      "A": "Unbeabsichtigt",
+      "B": "groß",
+      "C": "wissen",
+      "D": "Feuer"
+    },
+    "meaning_fa": "به طور غیر عمدی، ناخواسته",
+    "explanation": "'Unbeabsichtigt' bedeutet auf Englisch 'unintentionally'.",
+    "correct": "A"
+  },
+  {
+    "id": 218,
+    "word": "mitigating",
+    "sentence_en": "The company is implementing measures for mitigating potential risks.",
+    "meaning_de": {
+      "A": "Mildern",
+      "B": "Kind",
+      "C": "alt",
+      "D": "Ort"
+    },
+    "meaning_fa": "کاهش دادن، تخفیف دادن",
+    "explanation": "'Mildern' bedeutet auf Englisch 'mitigating'.",
+    "correct": "A"
+  }
+]
