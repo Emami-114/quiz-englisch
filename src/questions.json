@@ -3050,5 +3050,145 @@
     "meaning_fa": "کاهش دادن، تخفیف دادن",
     "explanation": "'Mildern' bedeutet auf Englisch 'mitigating'.",
     "correct": "A"
+  },
+  {
+    "id": 219,
+    "word": "claiming",
+    "sentence_en": "The user is claiming that the software has improved their productivity.",
+    "meaning_de": {
+      "A": "Behaupten",
+      "B": "Boden",
+      "C": "krank",
+      "D": "zeigen"
+    },
+    "meaning_fa": "ادعا کردن، اظهار داشتن",
+    "explanation": "'Behaupten' bedeutet auf Englisch 'claiming'.",
+    "correct": "A"
+  },
+  {
+    "id": 220,
+    "word": "persuade",
+    "sentence_en": "The marketing team is working to persuade customers to try the new product.",
+    "meaning_de": {
+      "A": "überzeugen",
+      "B": "laufen",
+      "C": "Buch",
+      "D": "Fenster"
+    },
+    "meaning_fa": "متقاعد کردن، قانع کردن",
+    "explanation": "'überzeugen' bedeutet auf Englisch 'persuade'.",
+    "correct": "A"
+  },
+  {
+    "id": 221,
+    "word": "flaw",
+    "sentence_en": "The software has a flaw that causes it to crash.",
+    "meaning_de": {
+      "A": "Fehler",
+      "B": "Körper",
+      "C": "alt",
+      "D": "Arm"
+    },
+    "meaning_fa": "نقص، امیل",
+    "explanation": "'Fehler' bedeutet auf Englisch 'flaw'.",
+    "correct": "A"
+  },
+  {
+    "id": 222,
+    "word": "unsuspecting",
+    "sentence_en": "The unsuspecting user clicked on the malicious link without realizing the danger.",
+    "meaning_de": {
+      "A": "Unwissend",
+      "B": "Körper",
+      "C": "alt",
+      "D": "Arm"
+    },
+    "meaning_fa": "ناامید، بیخبر",
+    "explanation": "'Unwissend' bedeutet auf Englisch 'unsuspecting'.",
+    "correct": "A"
+  },
+  {
+    "id": 223,
+    "word": "lure",
+    "sentence_en": "The attacker used a fake email to lure the user into clicking on a malicious link.",
+    "meaning_de": {
+      "A": "Ködern",
+      "B": "Fenster",
+      "C": "Buch",
+      "D": "laufen"
+    },
+    "meaning_fa": "طعمه قرار دادن، فریب دادن",
+    "explanation": "'Ködern' bedeutet auf Englisch 'lure'.",
+    "correct": "A"
+  },
+  {
+    "id": 224,
+    "word": "extort",
+    "sentence_en": "The hacker attempted to extort money from the company by threatening to release sensitive data.",
+    "meaning_de": {
+      "A": "Erpressen",
+      "B": "Kind",
+      "C": "Ort",
+      "D": "alt"
+    },
+    "meaning_fa": "اخاذی کردن، باج‌گیری کردن",
+    "explanation": "'Erpressen' bedeutet auf Englisch 'extort'.",
+    "correct": "A"
+  },
+  {
+    "id": 225,
+    "word": "awareness",
+    "sentence_en": "Raising awareness about cybersecurity threats is crucial for protecting sensitive information.",
+    "meaning_de": {
+      "A": "Bewusstsein",
+      "B": "schnell",
+      "C": "Fenster",
+      "D": "laufen"
+    },
+    "meaning_fa": "آگاهی، شناخت",
+    "explanation": "'Bewusstsein' bedeutet auf Englisch 'awareness'.",
+    "correct": "A"
+  },
+  {
+    "id": 226,
+    "word": "appeared",
+    "sentence_en": "The user appeared to be confused by the error message.",
+    "meaning_de": {
+      "A": "erscheinen",
+      "B": "schnell",
+      "C": "Fenster",
+      "D": "laufen"
+    },
+    "meaning_fa": "ظهور داشتن،ActionResult",
+    "explanation": "'erscheinen'_pb bedeut`:t auf Englisch 'appeared'.",
+    "correct": "A"
+  },
+  {
+    "id": 227,
+    "word": "attack surface",
+    "sentence_en": "The attack surface of the application needs to be reduced.",
+    "meaning_de": {
+      "A": "Angriffsfläche",
+      "B": "Körper",
+      "C": "alt",
+      "D": "Arm"
+    },
+    "meaning_fa": "سطح حمله، مساحت حاصله‌یا",
+    "explanation": "'Angriffsfläche'inameUBL szerINU für 'attack surface'.",
+    "correct": "A"
+  },
+  {
+    "id": 228,
+    "word": "intent",
+    "sentence_en": "The intent of the policy is to protect user data.",
+    "meaning_de": {
+      "A": "Absicht",
+      "B": "laufen",
+      "C": "Buch",
+      "D": "Fenster"
+    },
+    "meaning_fa": "قصد، نیت",
+    "explanation": "'Absicht' bedeutet auf Englisch 'intent'.",
+    "correct": "A"
   }
 ]
