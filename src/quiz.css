@@ -1,7 +1,7 @@
-
 .quiz-root{
   min-height:100vh;
   display:flex;
+  flex-direction: column;
   align-items:center;
   justify-content:center;
   padding:40px 20px;
@@ -80,3 +80,25 @@
 .switch input:checked + .box{ background: #2563eb }
 .switch input:checked + .box .knob{ left:23px }
 .switch .switch-label{ font-weight:700; font-size:14px }
+.mode-buttons {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  background: rgb(119, 117, 117);
+  cursor: pointer;
+  width: 200px; /* Optional: feste Breite für bessere Ausrichtung */
+}
+
+.mode-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
