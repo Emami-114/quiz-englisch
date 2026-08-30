@@ -3190,5 +3190,201 @@
     "meaning_fa": "قصد، نیت",
     "explanation": "'Absicht' bedeutet auf Englisch 'intent'.",
     "correct": "A"
+  },
+  {
+    "id": 229,
+    "word": "security flaw",
+    "sentence_en": "A serious security flaw was discovered in the company's network software.",
+    "meaning_de": {
+      "A": "Sicherheitslücke",
+      "B": "Netzwerkkarte",
+      "C": "Festplatte",
+      "D": "Benutzeroberfläche"
+    },
+    "meaning_fa": "رخنه امنیتی، نقص امنیتی",
+    "explanation": "'Sicherheitslücke' bedeutet auf Englisch 'security flaw'.",
+    "correct": "A"
+  },
+  {
+    "id": 230,
+    "word": "dedicated",
+    "sentence_en": "She is a dedicated team member who always puts in extra effort.",
+    "meaning_de": {
+      "A": "vorsichtig",
+      "B": "Engagiert / Gewidmet",
+      "C": "überrascht",
+      "D": "langsam"
+    },
+    "meaning_fa": "متعهد، فداکار، اختصاصی",
+    "explanation": "'Engagiert' bedeutet auf Englisch 'dedicated'.",
+    "correct": "B"
+  },
+  {
+    "id": 231,
+    "word": "versatile",
+    "sentence_en": "JavaScript is a versatile programming language used for both front-end and back-end.",
+    "meaning_de": {
+      "A": "einfach",
+      "B": "teuer",
+      "C": "Vielseitig",
+      "D": "veraltet"
+    },
+    "meaning_fa": "همه‌کاره، چندمنظوره، منعطف",
+    "explanation": "'Vielseitig' bedeutet auf Englisch 'versatile'.",
+    "correct": "C"
+  },
+  {
+    "id": 232,
+    "word": "diligent",
+    "sentence_en": "Through diligent work and attention to detail, he completed the project flawlessly.",
+    "meaning_de": {
+      "A": "schwach",
+      "B": "mutig",
+      "C": "bequem",
+      "D": "Fleißig / Sorgfältig"
+    },
+    "meaning_fa": "کوشا، پرتلاش، سخت‌کوش",
+    "explanation": "'Fleißig' bedeutet auf Englisch 'diligent'.",
+    "correct": "D"
+  },
+  {
+    "id": 233,
+    "word": "fragile",
+    "sentence_en": "Be careful with this package because it contains fragile glass items.",
+    "meaning_de": {
+      "A": "Zerbrechlich",
+      "B": "stabil",
+      "C": "schwer",
+      "D": "dunkel"
+    },
+    "meaning_fa": "شکننده، آسیب‌پذیر، ظریف",
+    "explanation": "'Zerbrechlich' bedeutet auf Englisch 'fragile'.",
+    "correct": "A"
+  },
+  {
+    "id": 234,
+    "word": "evolving",
+    "sentence_en": "Cyber threats are constantly evolving, requiring modern defense strategies.",
+    "meaning_de": {
+      "A": "stoppen",
+      "B": "Sich entwickelnd",
+      "C": "verschwinden",
+      "D": "wiederholen"
+    },
+    "meaning_fa": "در حال تکامل، رو به رشد",
+    "explanation": "'Sich entwickelnd' bedeutet auf Englisch 'evolving'.",
+    "correct": "B"
+  },
+  {
+    "id": 235,
+    "word": "inspired",
+    "sentence_en": "His speech inspired the whole team to reach their highest goals.",
+    "meaning_de": {
+      "A": "ermüdet",
+      "B": "ignoriert",
+      "C": "Inspiriert",
+      "D": "gehindert"
+    },
+    "meaning_fa": "الهام‌گرفته، برانگیخته",
+    "explanation": "'Inspiriert' bedeutet auf Englisch 'inspired'.",
+    "correct": "C"
+  },
+  {
+    "id": 236,
+    "word": "conquer",
+    "sentence_en": "With enough courage and practice, you can conquer any challenge.",
+    "meaning_de": {
+      "A": "aufgeben",
+      "B": "verstecken",
+      "C": "vergessen",
+      "D": "Erobern / Überwinden"
+    },
+    "meaning_fa": "تسخیر کردن، فتح کردن، غلبه کردن",
+    "explanation": "'Erobern' bedeutet auf Englisch 'conquer'.",
+    "correct": "D"
+  },
+  {
+    "id": 237,
+    "word": "rapid",
+    "sentence_en": "The rapid growth of the company surprised the entire market.",
+    "meaning_de": {
+      "A": "Schnell / Rasch",
+      "B": "langsam",
+      "C": "schwierig",
+      "D": "leise"
+    },
+    "meaning_fa": "سریع، شتابان، تند",
+    "explanation": "'Schnell' bedeutet auf Englisch 'rapid'.",
+    "correct": "A"
+  },
+  {
+    "id": 238,
+    "word": "impersonation",
+    "sentence_en": "The attacker was investigated for online impersonation and identity theft.",
+    "meaning_de": {
+      "A": "Zusammenarbeit",
+      "B": "Identitätsdiebstahl / Nachahmung",
+      "C": "Untersuchung",
+      "D": "Bestätigung"
+    },
+    "meaning_fa": "جعل هویت، تظاهر به هویت دیگری",
+    "explanation": "'Identitätsdiebstahl' bedeutet auf Englisch 'impersonation'.",
+    "correct": "B"
+  },
+  {
+    "id": 239,
+    "word": "pretending",
+    "sentence_en": "He was pretending to understand the topic, but he was completely lost.",
+    "meaning_de": {
+      "A": "erklären",
+      "B": "beweisen",
+      "C": "Vortäuschen / So tun als ob",
+      "D": "verstehen"
+    },
+    "meaning_fa": "وانمود کردن، تظاهر کردن",
+    "explanation": "'Vortäuschen' bedeutet auf Englisch 'pretending'.",
+    "correct": "C"
+  },
+  {
+    "id": 240,
+    "word": "variety",
+    "sentence_en": "The restaurant offers a great variety of international dishes.",
+    "meaning_de": {
+      "A": "Einfachheit",
+      "B": "Begrenzung",
+      "C": "Gleichheit",
+      "D": "Vielfalt / Abwechslung"
+    },
+    "meaning_fa": "تنوع، گوناگونی",
+    "explanation": "'Vielfalt' bedeutet auf Englisch 'variety'.",
+    "correct": "D"
+  },
+  {
+    "id": 241,
+    "word": "castle",
+    "sentence_en": "They visited a medieval castle located on top of the mountain.",
+    "meaning_de": {
+      "A": "Burg / Schloss",
+      "B": "Brücke",
+      "C": "Wald",
+      "D": "Dorf"
+    },
+    "meaning_fa": "قلعه، قصر، دژ",
+    "explanation": "'Burg' bedeutet auf Englisch 'castle'.",
+    "correct": "A"
+  },
+  {
+    "id": 242,
+    "word": "underestimated",
+    "sentence_en": "We underestimated how much time the task would actually take.",
+    "meaning_de": {
+      "A": "überschätzt",
+      "B": "Unterschätzt",
+      "C": "berechnet",
+      "D": "beendet"
+    },
+    "meaning_fa": "دست‌کم گرفته شده، کمتر برآورد شده",
+    "explanation": "'Unterschätzt' bedeutet auf Englisch 'underestimated'.",
+    "correct": "B"
   }
 ]
