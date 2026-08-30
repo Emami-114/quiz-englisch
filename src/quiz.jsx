@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import './quiz.css'
 import questions from './questions.json'
 import { speak, stopSpeaking } from './utils/speech'
@@ -24,6 +24,8 @@ export default function Quiz() {
   const [speakingSentence, setSpeakingSentence] = useState(false)
   const [autoPronounce, setAutoPronounce] = useState(true)
   const [feedback, setFeedback] = useState(null) // 'ok' | 'repeat'
+  const [searchQuery, setSearchQuery] = useState('')
+  const [showSearchResultsList, setShowSearchResultsList] = useState(false)
 
   // Load / initialize cards based on mode
   const initDeck = useCallback(() => {
@@ -68,38 +70,113 @@ export default function Quiz() {
         list = []
       }
     } else {
-      // 'all' words shuffled
-      list = [...questions].sort(() => 0.5 - Math.random())
+      // 'all' words
+      list = [...questions]
     }
 
     setDeck(list)
     setInitialCount(list.length)
     setLearnedCount(0)
+    setSearchQuery('')
+    setShowSearchResultsList(false)
   }, [mode])
 
   useEffect(() => {
     initDeck()
   }, [initDeck])
 
+  // Search filter across all questions
+  const searchResults = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase()
+    if (!query) return []
+
+    return questions.filter((q) => {
+      const wordMatch = q.word && q.word.toLowerCase().includes(query)
+      const sentenceMatch = q.sentence_en && q.sentence_en.toLowerCase().includes(query)
+      const deMatch =
+        q.meaning_de &&
+        Object.values(q.meaning_de).some((val) => val && val.toLowerCase().includes(query))
+      const faMatch = q.meaning_fa && q.meaning_fa.toLowerCase().includes(query)
+      const expMatch = q.explanation && q.explanation.toLowerCase().includes(query)
+
+      return wordMatch || sentenceMatch || deMatch || faMatch || expMatch
+    })
+  }, [searchQuery])
+
+  // Handle Search Input Change
+  function handleSearchChange(e) {
+    const val = e.target.value
+    setSearchQuery(val)
+    stopSpeaking()
+    setIsFlipped(false)
+
+    if (val.trim().length > 0) {
+      const filtered = questions.filter((q) => {
+        const qLower = val.trim().toLowerCase()
+        const wordMatch = q.word && q.word.toLowerCase().includes(qLower)
+        const sentenceMatch = q.sentence_en && q.sentence_en.toLowerCase().includes(qLower)
+        const deMatch =
+          q.meaning_de &&
+          Object.values(q.meaning_de).some((v) => v && v.toLowerCase().includes(qLower))
+        const faMatch = q.meaning_fa && q.meaning_fa.toLowerCase().includes(qLower)
+        const expMatch = q.explanation && q.explanation.toLowerCase().includes(qLower)
+        return wordMatch || sentenceMatch || deMatch || faMatch || expMatch
+      })
+      setDeck(filtered)
+      setInitialCount(filtered.length)
+      setLearnedCount(0)
+      setShowSearchResultsList(true)
+    } else {
+      // Reset to all words
+      setDeck([...questions])
+      setInitialCount(questions.length)
+      setLearnedCount(0)
+      setShowSearchResultsList(false)
+    }
+  }
+
+  // Clear search
+  function handleClearSearch() {
+    setSearchQuery('')
+    setShowSearchResultsList(false)
+    setDeck([...questions])
+    setInitialCount(questions.length)
+    setLearnedCount(0)
+    setIsFlipped(false)
+  }
+
+  // Select a specific card from search results list
+  function handleSelectSearchResult(selectedWordItem) {
+    stopSpeaking()
+    setIsFlipped(false)
+    // Put selected card at front of deck
+    setDeck((prev) => {
+      const rest = prev.filter((item) => (item.id || item.word) !== (selectedWordItem.id || selectedWordItem.word))
+      return [selectedWordItem, ...rest]
+    })
+    setShowSearchResultsList(false)
+  }
+
   // Current Card
   const currentCard = deck.length > 0 ? deck[0] : null
 
   // Pronounce current word when loaded if autoPronounce is enabled
   useEffect(() => {
-    if (currentCard && autoPronounce) {
+    if (currentCard && autoPronounce && !searchQuery) {
       speak(currentCard.word, {
         onStart: () => setSpeakingWord(true),
         onEnd: () => setSpeakingWord(false),
         onError: () => setSpeakingWord(false),
       })
     }
-  }, [currentCard, autoPronounce])
+  }, [currentCard, autoPronounce, searchQuery])
 
   // Pronounce word explicitly
-  function handlePlayWord(e) {
+  function handlePlayWord(e, wordToPlay) {
     if (e) e.stopPropagation()
-    if (!currentCard) return
-    speak(currentCard.word, {
+    const targetWord = wordToPlay || (currentCard && currentCard.word)
+    if (!targetWord) return
+    speak(targetWord, {
       onStart: () => setSpeakingWord(true),
       onEnd: () => setSpeakingWord(false),
       onError: () => setSpeakingWord(false),
@@ -173,6 +250,11 @@ export default function Quiz() {
   // Keyboard Shortcuts (Space: Flip, Left Arrow / 1: Nein, Right Arrow / 2: OK, A: Audio)
   useEffect(() => {
     function handleKeyDown(event) {
+      // Don't trigger flashcard shortcuts when user is typing in search input
+      if (event.target && ['INPUT', 'TEXTAREA'].includes(event.target.tagName)) {
+        return
+      }
+
       if (deck.length === 0) return
 
       if (event.key === ' ' || event.code === 'Space') {
@@ -194,12 +276,16 @@ export default function Quiz() {
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [deck, isFlipped, currentCard])
 
-  const progressPercent = initialCount > 0 ? Math.min(100, Math.round((learnedCount / initialCount) * 100)) : 100
+  const progressPercent =
+    initialCount > 0 ? Math.min(100, Math.round((learnedCount / initialCount) * 100)) : 100
 
-  // German translation resolution
-  const correctMeaning = currentCard
-    ? currentCard.meaning_de[currentCard.correct] || Object.values(currentCard.meaning_de)[0]
-    : ''
+  // German translation helper
+  function getMeaning(card) {
+    if (!card) return ''
+    return card.meaning_de[card.correct] || Object.values(card.meaning_de)[0] || ''
+  }
+
+  const correctMeaning = currentCard ? getMeaning(currentCard) : ''
 
   return (
     <div className="flashcard-app">
@@ -225,26 +311,108 @@ export default function Quiz() {
             className={`mode-tab ${mode === 'all' ? 'active' : ''}`}
             onClick={() => setMode('all')}
           >
-            📖 Alle Wörter
+            📖 Alle Wörter ({questions.length})
           </button>
         </div>
       </header>
+
+      {/* Search Bar (Available when in "Alle Wörter" mode or for quick lookup) */}
+      {mode === 'all' && (
+        <div className="search-section">
+          <div className="search-input-wrapper">
+            <span className="search-icon">🔍</span>
+            <input
+              type="text"
+              className="search-input"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              placeholder="Wort suchen (z.B. 'acts', 'interface', 'Haus')..."
+            />
+            {searchQuery && (
+              <button
+                className="search-clear-btn"
+                onClick={handleClearSearch}
+                title="Suche zurücksetzen"
+              >
+                ✕
+              </button>
+            )}
+          </div>
+
+          {/* Search Status & Match Count */}
+          {searchQuery.trim() !== '' && (
+            <div className="search-status-bar">
+              <span className={`search-count-badge ${searchResults.length > 0 ? 'found' : 'not-found'}`}>
+                {searchResults.length > 0
+                  ? `✅ ${searchResults.length} ${searchResults.length === 1 ? 'Wort gefunden' : 'Wörter gefunden'}`
+                  : `❌ Kein Wort für "${searchQuery}" gefunden`}
+              </span>
+
+              {searchResults.length > 0 && (
+                <button
+                  className="toggle-list-btn"
+                  onClick={() => setShowSearchResultsList((prev) => !prev)}
+                >
+                  {showSearchResultsList ? '▲ Liste einklappen' : '▼ Gefundene Wörter anzeigen'}
+                </button>
+              )}
+            </div>
+          )}
+
+          {/* Expandable Search Results List */}
+          {searchQuery.trim() !== '' && showSearchResultsList && searchResults.length > 0 && (
+            <div className="search-results-dropdown">
+              <div className="search-results-header">Gefundene Vokabeln:</div>
+              <div className="search-results-scroll">
+                {searchResults.map((item) => (
+                  <div
+                    key={item.id || item.word}
+                    className={`search-result-item ${currentCard && (currentCard.id || currentCard.word) === (item.id || item.word) ? 'active' : ''}`}
+                    onClick={() => handleSelectSearchResult(item)}
+                  >
+                    <div className="result-item-main">
+                      <strong className="result-word">{item.word}</strong>
+                      <span className="result-meaning">{getMeaning(item)}</span>
+                    </div>
+                    <div className="result-item-actions">
+                      <button
+                        className="result-speaker-btn"
+                        onClick={(e) => handlePlayWord(e, item.word)}
+                        title="Aussprache anhören"
+                      >
+                        🔊
+                      </button>
+                      <button
+                        className="result-learn-btn"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          handleSelectSearchResult(item)
+                        }}
+                      >
+                        Als Karte öffnen
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Progress Bar & Session Stats */}
       <div className="progress-container">
         <div className="progress-info">
           <span>
-            Fortschritt: <strong>{learnedCount}</strong> / {initialCount} gelernt
+            {searchQuery ? 'Suchergebnis:' : 'Fortschritt:'}{' '}
+            <strong>{learnedCount}</strong> / {initialCount} {searchQuery ? 'Karten' : 'gelernt'}
           </span>
           <span className="remaining-badge">
             {deck.length} {deck.length === 1 ? 'Karte übrig' : 'Karten im Umlauf'}
           </span>
         </div>
         <div className="progress-track">
-          <div
-            className="progress-fill"
-            style={{ width: `${progressPercent}%` }}
-          />
+          <div className="progress-fill" style={{ width: `${progressPercent}%` }} />
         </div>
       </div>
 
@@ -357,38 +525,57 @@ export default function Quiz() {
             </div>
           </div>
         ) : (
-          /* Completion Screen */
+          /* Completion or Empty Search State Screen */
           <div className="completion-card">
-            <div className="completion-icon">🎉</div>
-            <h2>Hervorragend gemacht!</h2>
-            <p className="completion-subtitle">
-              {mode === 'week'
-                ? 'Du hast alle 20 Wörter dieser Woche durchgearbeitet!'
-                : 'Du hast alle Karten dieser Lernrunde gemeistert!'}
-            </p>
+            {searchQuery && searchResults.length === 0 ? (
+              <>
+                <div className="completion-icon">🔍</div>
+                <h2>Kein Wort gefunden</h2>
+                <p className="completion-subtitle">
+                  Das Wort "<strong>{searchQuery}</strong>" ist in der Datenbank nicht vorhanden.
+                </p>
+                <div className="completion-actions">
+                  <button className="btn-primary" onClick={handleClearSearch}>
+                    ✕ Suche löschen & Alle Wörter anzeigen
+                  </button>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="completion-icon">🎉</div>
+                <h2>Hervorragend gemacht!</h2>
+                <p className="completion-subtitle">
+                  {mode === 'week'
+                    ? 'Du hast alle 20 Wörter dieser Woche durchgearbeitet!'
+                    : 'Du hast alle Karten dieser Lernrunde gemeistert!'}
+                </p>
 
-            <div className="completion-stats">
-              <div className="stat-item">
-                <span className="stat-number">{learnedCount}</span>
-                <span className="stat-label">Wörter beherrscht</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">14 Tage</span>
-                <span className="stat-label">Wiederholung in 2 Wochen</span>
-              </div>
-            </div>
+                <div className="completion-stats">
+                  <div className="stat-item">
+                    <span className="stat-number">{learnedCount}</span>
+                    <span className="stat-label">Wörter beherrscht</span>
+                  </div>
+                  <div className="stat-item">
+                    <span className="stat-number">14 Tage</span>
+                    <span className="stat-label">Wiederholung in 2 Wochen</span>
+                  </div>
+                </div>
 
-            <div className="completion-actions">
-              <button className="btn-primary" onClick={initDeck}>
-                🔄 Diese 20 Wörter nochmals üben
-              </button>
-              <button
-                className="btn-secondary"
-                onClick={() => setMode(mode === 'all' ? 'week' : 'all')}
-              >
-                {mode === 'all' ? '📅 Zurück zu den 20 Wochenwörtern' : '📖 Alle Wörter durchstöbern'}
-              </button>
-            </div>
+                <div className="completion-actions">
+                  <button className="btn-primary" onClick={initDeck}>
+                    🔄 Diese Runde nochmals üben
+                  </button>
+                  <button
+                    className="btn-secondary"
+                    onClick={() => setMode(mode === 'all' ? 'week' : 'all')}
+                  >
+                    {mode === 'all'
+                      ? '📅 Zurück zu den 20 Wochenwörtern'
+                      : '📖 Alle Wörter durchstöbern'}
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         )}
       </main>
@@ -407,7 +594,9 @@ export default function Quiz() {
           </label>
         </div>
         <div className="keyboard-shortcuts">
-          <span>⌨️ Tastatur: <code>Leertaste</code> Umdrehen • <code>← / 1</code> Nein • <code>→ / 2</code> OK • <code>A</code> Audio</span>
+          <span>
+            ⌨️ Tastatur: <code>Leertaste</code> Umdrehen • <code>← / 1</code> Nein • <code>→ / 2</code> OK • <code>A</code> Audio
+          </span>
         </div>
       </footer>
     </div>
