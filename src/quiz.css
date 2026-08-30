@@ -263,7 +263,40 @@
 .result-item-main {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
+}
+
+.result-word-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.result-word-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.result-mini-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+}
+
+.result-mini-badge.past {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.result-mini-badge.future {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
 .result-word {
@@ -508,6 +541,9 @@
 .word-section {
   text-align: center;
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .english-word {
@@ -517,6 +553,97 @@
   letter-spacing: -0.01em;
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Word Forms (Past & Future) */
+.word-forms-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.word-form-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.word-form-chip:hover {
+  transform: translateY(-1px);
+}
+
+.word-form-chip.past-chip {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fef3c7;
+}
+
+.word-form-chip.past-chip:hover {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: rgba(245, 158, 11, 0.55);
+}
+
+.word-form-chip.future-chip {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #e0f2fe;
+}
+
+.word-form-chip.future-chip:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.form-chip-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.word-form-chip.past-chip .form-chip-label {
+  color: #fbbf24;
+}
+
+.word-form-chip.future-chip .form-chip-label {
+  color: #38bdf8;
+}
+
+.form-chip-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-chip-audio {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: inherit;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  transition: all 0.15s ease;
+  margin-left: 2px;
+}
+
+.form-chip-audio:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.15);
 }
 
 .sentence-box {
@@ -581,6 +708,70 @@
   color: #34d399;
   margin: 0;
   line-height: 1.25;
+}
+
+/* Back Side English Forms Summary */
+.back-forms-summary {
+  background: rgba(30, 41, 59, 0.55);
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.back-forms-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
+}
+
+.back-forms-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.back-form-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 8px;
+}
+
+.back-form-pill small {
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-weight: 700;
+}
+
+.back-form-pill.base {
+  background: rgba(148, 163, 184, 0.15);
+  color: #f1f5f9;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.back-form-pill.past {
+  background: rgba(245, 158, 11, 0.12);
+  color: #fde68a;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.back-form-pill.future {
+  background: rgba(56, 189, 248, 0.12);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
 .explanation-box {

@@ -92,14 +92,17 @@ export default function Quiz() {
 
     return questions.filter((q) => {
       const wordMatch = q.word && q.word.toLowerCase().includes(query)
+      const pastMatch = q.past && q.past.toLowerCase().includes(query)
+      const futureMatch = q.future && q.future.toLowerCase().includes(query)
       const sentenceMatch = q.sentence_en && q.sentence_en.toLowerCase().includes(query)
       const deMatch =
         q.meaning_de &&
-        Object.values(q.meaning_de).some((val) => val && val.toLowerCase().includes(query))
+        (typeof q.meaning_de === 'string'
+          ? q.meaning_de.toLowerCase().includes(query)
+          : Object.values(q.meaning_de).some((val) => val && val.toLowerCase().includes(query)))
       const faMatch = q.meaning_fa && q.meaning_fa.toLowerCase().includes(query)
-      const expMatch = q.explanation && q.explanation.toLowerCase().includes(query)
 
-      return wordMatch || sentenceMatch || deMatch || faMatch || expMatch
+      return wordMatch || pastMatch || futureMatch || sentenceMatch || deMatch || faMatch
     })
   }, [searchQuery])
 
@@ -111,16 +114,19 @@ export default function Quiz() {
     setIsFlipped(false)
 
     if (val.trim().length > 0) {
+      const qLower = val.trim().toLowerCase()
       const filtered = questions.filter((q) => {
-        const qLower = val.trim().toLowerCase()
         const wordMatch = q.word && q.word.toLowerCase().includes(qLower)
+        const pastMatch = q.past && q.past.toLowerCase().includes(qLower)
+        const futureMatch = q.future && q.future.toLowerCase().includes(qLower)
         const sentenceMatch = q.sentence_en && q.sentence_en.toLowerCase().includes(qLower)
         const deMatch =
           q.meaning_de &&
-          Object.values(q.meaning_de).some((v) => v && v.toLowerCase().includes(qLower))
+          (typeof q.meaning_de === 'string'
+            ? q.meaning_de.toLowerCase().includes(qLower)
+            : Object.values(q.meaning_de).some((v) => v && v.toLowerCase().includes(qLower)))
         const faMatch = q.meaning_fa && q.meaning_fa.toLowerCase().includes(qLower)
-        const expMatch = q.explanation && q.explanation.toLowerCase().includes(qLower)
-        return wordMatch || sentenceMatch || deMatch || faMatch || expMatch
+        return wordMatch || pastMatch || futureMatch || sentenceMatch || deMatch || faMatch
       })
       setDeck(filtered)
       setInitialCount(filtered.length)
@@ -282,7 +288,8 @@ export default function Quiz() {
   // German translation helper
   function getMeaning(card) {
     if (!card) return ''
-    return card.meaning_de[card.correct] || Object.values(card.meaning_de)[0] || ''
+    if (typeof card.meaning_de === 'string') return card.meaning_de
+    return card.meaning_de?.[card.correct] || Object.values(card.meaning_de || {})[0] || ''
   }
 
   const correctMeaning = currentCard ? getMeaning(currentCard) : ''
@@ -371,7 +378,15 @@ export default function Quiz() {
                     onClick={() => handleSelectSearchResult(item)}
                   >
                     <div className="result-item-main">
-                      <strong className="result-word">{item.word}</strong>
+                      <div className="result-word-title-row">
+                        <strong className="result-word">{item.word}</strong>
+                        {(item.past || item.future) && (
+                          <div className="result-word-badges">
+                            {item.past && <span className="result-mini-badge past">Past: {item.past}</span>}
+                            {item.future && <span className="result-mini-badge future">Future: {item.future}</span>}
+                          </div>
+                        )}
+                      </div>
                       <span className="result-meaning">{getMeaning(item)}</span>
                     </div>
                     <div className="result-item-actions">
@@ -441,6 +456,37 @@ export default function Quiz() {
 
                 <div className="word-section">
                   <h2 className="english-word">{currentCard.word}</h2>
+
+                  {(currentCard.past || currentCard.future) && (
+                    <div className="word-forms-container" onClick={(e) => e.stopPropagation()}>
+                      {currentCard.past && (
+                        <div className="word-form-chip past-chip">
+                          <span className="form-chip-label">Past:</span>
+                          <span className="form-chip-value">{currentCard.past}</span>
+                          <button
+                            className="form-chip-audio"
+                            onClick={(e) => handlePlayWord(e, currentCard.past)}
+                            title={`Aussprache "${currentCard.past}"`}
+                          >
+                            🔊
+                          </button>
+                        </div>
+                      )}
+                      {currentCard.future && (
+                        <div className="word-form-chip future-chip">
+                          <span className="form-chip-label">Future:</span>
+                          <span className="form-chip-value">{currentCard.future}</span>
+                          <button
+                            className="form-chip-audio"
+                            onClick={(e) => handlePlayWord(e, currentCard.future)}
+                            title={`Aussprache "${currentCard.future}"`}
+                          >
+                            🔊
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 {currentCard.sentence_en && (
@@ -478,6 +524,27 @@ export default function Quiz() {
                   <div className="meaning-label">Bedeutung:</div>
                   <h3 className="german-meaning">{correctMeaning}</h3>
                 </div>
+
+                {(currentCard.past || currentCard.future) && (
+                  <div className="back-forms-summary">
+                    <span className="back-forms-label">🇬🇧 Englische Formen:</span>
+                    <div className="back-forms-pills">
+                      <span className="back-form-pill base">
+                        <small>Grundform:</small> {currentCard.word}
+                      </span>
+                      {currentCard.past && (
+                        <span className="back-form-pill past">
+                          <small>Vergangenheit:</small> {currentCard.past}
+                        </span>
+                      )}
+                      {currentCard.future && (
+                        <span className="back-form-pill future">
+                          <small>Zukunft:</small> {currentCard.future}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                )}
 
                 {currentCard.explanation && (
                   <div className="explanation-box">
