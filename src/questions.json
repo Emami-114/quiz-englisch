@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "id":  1,
         "word":  "act",
@@ -2671,5 +2671,221 @@
         "sentence_en":  "The new laptop model was advertised with extended battery life.",
         "meaning_de":  "Beworben / Inseriert",
         "meaning_fa":  "تبلیغ شده، آگهی شده"
+    },
+    {
+        "id": 298,
+        "word": "undeniable",
+        "past": "",
+        "future": "",
+        "sentence_en": "There is undeniable evidence that regular data backups protect organizations against ransomware.",
+        "meaning_de": "Unbestreitbar / Offensichtlich",
+        "meaning_fa": "انکارناپذیر، مسلم، قطعی"
+    },
+    {
+        "id": 299,
+        "word": "vary",
+        "past": "varied",
+        "future": "will vary",
+        "sentence_en": "Network latency and throughput can vary significantly depending on server load.",
+        "meaning_de": "Variieren / Abweichen / Unterschiedlich sein",
+        "meaning_fa": "تغییر کردن، فرق داشتن، تنوع داشتن"
+    },
+    {
+        "id": 300,
+        "word": "deviation",
+        "past": "",
+        "future": "",
+        "sentence_en": "Any unexpected deviation from the baseline configuration triggers a security alert.",
+        "meaning_de": "Abweichung",
+        "meaning_fa": "انحراف، تغییر مسیر، فاصله گرفتن از استاندارد"
+    },
+    {
+        "id": 301,
+        "word": "instantly",
+        "past": "",
+        "future": "",
+        "sentence_en": "The automated monitoring system notified the operations team instantly.",
+        "meaning_de": "Sofort / Augenblicklich",
+        "meaning_fa": "فوراً، بلافاصله، در یک لحظه"
+    },
+    {
+        "id": 302,
+        "word": "reside",
+        "past": "resided",
+        "future": "will reside",
+        "sentence_en": "The primary database resides on an encrypted dedicated server.",
+        "meaning_de": "Wohnen / Ansässig sein / Sich befinden (resides = befindet sich)",
+        "meaning_fa": "ساکن بودن، قرار داشتن، مستقر بودن"
+    },
+    {
+        "id": 303,
+        "word": "differ",
+        "past": "differed",
+        "future": "will differ",
+        "sentence_en": "Security requirements differ depending on the type of data being processed.",
+        "meaning_de": "Sich unterscheiden / Abweichen",
+        "meaning_fa": "فرق داشتن، تفاوت داشتن، اختلاف نظر داشتن"
+    },
+    {
+        "id": 304,
+        "word": "innocent",
+        "past": "",
+        "future": "",
+        "sentence_en": "An innocent email attachment can sometimes disguise malicious executable code.",
+        "meaning_de": "Unschuldig / Harmlos",
+        "meaning_fa": "بی‌گناه، معصوم، بی‌خطر و بی‌ضرر"
+    },
+    {
+        "id": 305,
+        "word": "innocent personality",
+        "past": "",
+        "future": "",
+        "sentence_en": "Her innocent personality makes her vulnerable to social engineering tricks.",
+        "meaning_de": "Unschuldige / Gutgläubige Persönlichkeit",
+        "meaning_fa": "شخصیت معصوم، ساده‌دل و زودباور"
+    },
+    {
+        "id": 306,
+        "word": "evade",
+        "past": "evaded",
+        "future": "will evade",
+        "sentence_en": "Sophisticated attackers use obfuscation techniques to evade signature-based detection.",
+        "meaning_de": "Umgehen / Ausweichen / Entkommen",
+        "meaning_fa": "طفره رفتن از، فرار کردن از، دور زدن"
+    },
+    {
+        "id": 307,
+        "word": "unattended",
+        "past": "",
+        "future": "",
+        "sentence_en": "Employees must never leave their laptops unattended in public workspaces.",
+        "meaning_de": "Unbeaufsichtigt",
+        "meaning_fa": "بدون مراقبت، تنها رها شده، بی‌پاسبان"
+    },
+    {
+        "id": 308,
+        "word": "hijack",
+        "past": "hijacked",
+        "future": "will hijack",
+        "sentence_en": "Attackers managed to hijack the administrator session using stolen session tokens.",
+        "meaning_de": "Kapern / Entführen / Gewaltsam übernehmen (hijacked = gekapert)",
+        "meaning_fa": "ربودن، هایجک کردن، تصاحب غیرقانونی"
+    },
+    {
+        "id": 309,
+        "word": "disrupt",
+        "past": "disrupted",
+        "future": "will disrupt",
+        "sentence_en": "A distributed denial-of-service attack can disrupt online banking services for hours.",
+        "meaning_de": "Stören / Unterbrechen / Lahmlegen",
+        "meaning_fa": "مختل کردن، برهم زدن، از کار انداختن"
+    },
+    {
+        "id": 310,
+        "word": "tedious",
+        "past": "",
+        "future": "",
+        "sentence_en": "Manually checking thousands of server logs is a tedious and error-prone process.",
+        "meaning_de": "Mühsam / Langwierig / Eintönig",
+        "meaning_fa": "کسل‌کننده، خسته‌کننده، ملال‌آور، پرزحمت"
+    },
+    {
+        "id": 311,
+        "word": "overcome",
+        "past": "overcame",
+        "future": "will overcome",
+        "sentence_en": "A resilient organization overcomes complex cyber incidents through thorough preparation.",
+        "meaning_de": "Überwinden / Bewältigen (overcomes = überwindet)",
+        "meaning_fa": "غلبه کردن، چیره شدن، فائق آمدن"
+    },
+    {
+        "id": 312,
+        "word": "evolved over time",
+        "past": "",
+        "future": "",
+        "sentence_en": "Encryption algorithms have evolved over time to resist modern computational power.",
+        "meaning_de": "Hat sich im Laufe der Zeit entwickelt (evolved overtime)",
+        "meaning_fa": "به مرور زمان تکامل یافته / در گذر زمان تغییر یافته"
+    },
+    {
+        "id": 313,
+        "word": "fatigue",
+        "past": "",
+        "future": "",
+        "sentence_en": "Alert fatigue occurs when security personnel are overwhelmed by too many false alarms.",
+        "meaning_de": "Ermüdung / Erschöpfung (z. B. Alert Fatigue)",
+        "meaning_fa": "خستگی، فرسودگی، بی‌رمقی"
+    },
+    {
+        "id": 314,
+        "word": "repetitive",
+        "past": "",
+        "future": "",
+        "sentence_en": "Automation scripts replace repetitive tasks so engineers can focus on critical issues.",
+        "meaning_de": "Wiederholend / Eintönig / Repetitiv",
+        "meaning_fa": "تکراری، مکرر، یکنواخت و پی‌درپی"
+    },
+    {
+        "id": 315,
+        "word": "arguably",
+        "past": "",
+        "future": "",
+        "sentence_en": "Zero-trust architecture is arguably the most effective modern security paradigm.",
+        "meaning_de": "Wohl / Vermutlich / Man kann argumentieren, dass",
+        "meaning_fa": "احتمالاً، مسلماً، به جرأت می‌توان گفت"
+    },
+    {
+        "id": 316,
+        "word": "adversaries",
+        "past": "",
+        "future": "",
+        "sentence_en": "Modern cybersecurity defenses must anticipate the tactics of sophisticated adversaries.",
+        "meaning_de": "Gegner / Widersacher / Feinde (Plural von adversary)",
+        "meaning_fa": "حریفان، دشمنان، رقبای سرسخت"
+    },
+    {
+        "id": 317,
+        "word": "pivotal",
+        "past": "",
+        "future": "",
+        "sentence_en": "Multi-factor authentication plays a pivotal role in preventing unauthorized access.",
+        "meaning_de": "Entscheidend / Ausschlaggebend / Zentral",
+        "meaning_fa": "حیاتی، تعیین‌کننده، کلیدی، محوری"
+    },
+    {
+        "id": 318,
+        "word": "dispel",
+        "past": "dispelled",
+        "future": "will dispel",
+        "sentence_en": "Transparent communication helps dispel public fears and misconceptions about the incident.",
+        "meaning_de": "Zerstreuen / Entkräften (z. B. Zweifel, Gerüchte)",
+        "meaning_fa": "برطرف کردن، زدودن، رفع کردن (شک و تردید یا شایعات)"
+    },
+    {
+        "id": 319,
+        "word": "overlook",
+        "past": "overlooked",
+        "future": "will overlook",
+        "sentence_en": "Developers should never overlook edge cases when designing authentication flows.",
+        "meaning_de": "Übersehen / Hinwegsehen über",
+        "meaning_fa": "نادیده گرفتن، غفلت کردن از، چشم‌پوشی کردن"
+    },
+    {
+        "id": 320,
+        "word": "unsolicited",
+        "past": "",
+        "future": "",
+        "sentence_en": "Users should be cautious of unsolicited phone calls asking for account credentials.",
+        "meaning_de": "Unaufgefordert / Unerbeten",
+        "meaning_fa": "ناخواسته، درخواست‌نشده، بدون تقاضا"
+    },
+    {
+        "id": 321,
+        "word": "reputable",
+        "past": "",
+        "future": "",
+        "sentence_en": "It is critical to purchase certificates only from reputable certificate authorities.",
+        "meaning_de": "Seriös / Angesehen / Vertrauenswürdig",
+        "meaning_fa": "معتبر، خوش‌نام، سرشناس، قابل اعتماد"
     }
 ]
