@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react'
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import './quiz.css'
 import questions from './questions.json'
 import { speak, stopSpeaking } from './utils/speech'
@@ -10,6 +10,16 @@ function getWeekNumber(date) {
   d.setUTCDate(d.getUTCDate() + 4 - dayNum)
   const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
   return Math.ceil(((d - yearStart) / 86400000 + 1) / 7)
+}
+
+// Fisher-Yates shuffle algorithm for unbiased random permutation
+function shuffleArray(array) {
+  const arr = [...array]
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
 }
 
 const TWO_WEEKS_MS = 14 * 24 * 60 * 60 * 1000
@@ -26,6 +36,27 @@ export default function Quiz() {
   const [feedback, setFeedback] = useState(null) // 'ok' | 'repeat'
   const [searchQuery, setSearchQuery] = useState('')
   const [showSearchResultsList, setShowSearchResultsList] = useState(false)
+  const [toastMessage, setToastMessage] = useState(null)
+  const [isShuffling, setIsShuffling] = useState(false)
+  const toastTimeoutRef = useRef(null)
+
+  const showToast = useCallback((msg) => {
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current)
+    }
+    setToastMessage(msg)
+    toastTimeoutRef.current = setTimeout(() => {
+      setToastMessage(null)
+    }, 2200)
+  }, [])
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current)
+      }
+    }
+  }, [])
 
   // Load / initialize cards based on mode
   const initDeck = useCallback(() => {
@@ -55,7 +86,7 @@ export default function Quiz() {
         if (available.length < 20) {
           available = questions
         }
-        const shuffled = [...available].sort(() => 0.5 - Math.random())
+        const shuffled = shuffleArray(available)
         list = shuffled.slice(0, 20)
         localStorage.setItem(weekKey, JSON.stringify(list))
       }
@@ -253,7 +284,117 @@ export default function Quiz() {
     }, 220)
   }
 
-  // Keyboard Shortcuts (Space: Flip, Left Arrow / 1: Nein, Right Arrow / 2: OK, A: Audio)
+  // Shuffle currently remaining cards in deck
+  const handleShuffleCurrentDeck = useCallback(() => {
+    if (deck.length <= 1) {
+      showToast('ℹ️ Mindestens 2 Karten zum Mischen erforderlich')
+      return
+    }
+    stopSpeaking()
+    setIsFlipped(false)
+    setFeedback(null)
+    setIsShuffling(true)
+
+    setTimeout(() => {
+      setDeck((prev) => shuffleArray(prev))
+      setIsShuffling(false)
+      showToast(`🔀 ${deck.length} Karten neu gemischt!`)
+    }, 180)
+  }, [deck.length, showToast])
+
+  // Generate a brand-new set of 20 random words for this week
+  const handleGenerateNewWeek = useCallback(() => {
+    stopSpeaking()
+    setIsFlipped(false)
+    setFeedback(null)
+    setIsShuffling(true)
+
+    const now = new Date()
+    const year = now.getFullYear()
+    const week = getWeekNumber(now)
+    const weekKey = `weeklyQuestions_${year}_${week}`
+
+    // Try to exclude currently assigned week questions if possible
+    const currentStored = localStorage.getItem(weekKey)
+    const currentWords = currentStored ? JSON.parse(currentStored) : []
+    const currentWordSet = new Set(currentWords.map((q) => q.word))
+
+    let available = questions.filter((q) => !currentWordSet.has(q.word))
+    if (available.length < 20) {
+      available = questions
+    }
+
+    const shuffled = shuffleArray(available)
+    const newList = shuffled.slice(0, 20)
+    localStorage.setItem(weekKey, JSON.stringify(newList))
+
+    setTimeout(() => {
+      setDeck(newList)
+      setInitialCount(newList.length)
+      setLearnedCount(0)
+      setSearchQuery('')
+      setShowSearchResultsList(false)
+      setIsShuffling(false)
+      showToast('🎲 20 neue Wörter für diese Woche geladen!')
+    }, 180)
+  }, [showToast])
+
+  // Reset and completely shuffle all questions in the database
+  const handleResetAndShuffleAll = useCallback(() => {
+    stopSpeaking()
+    setIsFlipped(false)
+    setFeedback(null)
+    setIsShuffling(true)
+
+    const shuffled = shuffleArray(questions)
+    setTimeout(() => {
+      setDeck(shuffled)
+      setInitialCount(shuffled.length)
+      setLearnedCount(0)
+      setSearchQuery('')
+      setShowSearchResultsList(false)
+      setIsShuffling(false)
+      showToast(`⚡ Alle ${questions.length} Wörter neu gemischt!`)
+    }, 180)
+  }, [showToast])
+
+  // Restart current round shuffled
+  const handleRestartShuffled = useCallback(() => {
+    stopSpeaking()
+    setIsFlipped(false)
+    setFeedback(null)
+    setIsShuffling(true)
+
+    let list = []
+    if (mode === 'week') {
+      const now = new Date()
+      const year = now.getFullYear()
+      const week = getWeekNumber(now)
+      const weekKey = `weeklyQuestions_${year}_${week}`
+      const stored = localStorage.getItem(weekKey)
+      list = stored ? JSON.parse(stored) : []
+      if (list.length === 0) list = questions.slice(0, 20)
+    } else if (mode === 'due') {
+      const srsData = JSON.parse(localStorage.getItem('flashcard_srs_data') || '{}')
+      list = questions.filter((q) => {
+        const item = srsData[q.id || q.word]
+        return item && item.nextReview && item.nextReview <= Date.now()
+      })
+    } else {
+      list = [...questions]
+    }
+
+    const shuffled = shuffleArray(list)
+    setTimeout(() => {
+      setDeck(shuffled)
+      setInitialCount(shuffled.length)
+      setLearnedCount(0)
+      setIsShuffling(false)
+      showToast(`🔀 ${shuffled.length} Karten neu gemischt!`)
+    }, 180)
+  }, [mode, showToast])
+
+  // Keyboard Shortcuts (Space: Flip, Left Arrow / 1: Nein, Right Arrow / 2: OK, A: Audio, S/M: Shuffle)
   useEffect(() => {
     function handleKeyDown(event) {
       // Don't trigger flashcard shortcuts when user is typing in search input
@@ -275,12 +416,15 @@ export default function Quiz() {
       } else if (event.key === 'a' || event.key === 'A') {
         event.preventDefault()
         handlePlayWord()
+      } else if (event.key === 's' || event.key === 'S' || event.key === 'm' || event.key === 'M') {
+        event.preventDefault()
+        handleShuffleCurrentDeck()
       }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [deck, isFlipped, currentCard])
+  }, [deck, isFlipped, currentCard, handleShuffleCurrentDeck])
 
   const progressPercent =
     initialCount > 0 ? Math.min(100, Math.round((learnedCount / initialCount) * 100)) : 100
@@ -415,6 +559,43 @@ export default function Quiz() {
         </div>
       )}
 
+      {/* Deck Controls Bar (Shuffle & Mix Buttons) */}
+      <div className="deck-controls-bar">
+        <button
+          className="deck-control-btn btn-shuffle"
+          onClick={handleShuffleCurrentDeck}
+          disabled={deck.length <= 1}
+          title="Verbleibende Karten im Stapel zufällig mischen (Taste: S oder M)"
+        >
+          <span className="ctrl-icon">🔀</span>
+          <span className="ctrl-label">Karten mischen</span>
+          {deck.length > 1 && <span className="ctrl-badge">{deck.length}</span>}
+        </button>
+
+        {mode === 'week' && (
+          <button
+            className="deck-control-btn btn-new-week"
+            onClick={handleGenerateNewWeek}
+            title="20 neue Zufallswörter für diese Woche aus allen Vokabeln ziehen"
+          >
+            <span className="ctrl-icon">🎲</span>
+            <span className="ctrl-label">20 neue Wörter ziehen</span>
+          </button>
+        )}
+
+        {mode === 'all' && (
+          <button
+            className="deck-control-btn btn-all-shuffle"
+            onClick={handleResetAndShuffleAll}
+            title="Alle Wörter zurücksetzen und in komplett neuer Zufallsreihenfolge lernen"
+          >
+            <span className="ctrl-icon">⚡</span>
+            <span className="ctrl-label">Alle neu mischen</span>
+            <span className="ctrl-badge">{questions.length}</span>
+          </button>
+        )}
+      </div>
+
       {/* Progress Bar & Session Stats */}
       <div className="progress-container">
         <div className="progress-info">
@@ -433,11 +614,16 @@ export default function Quiz() {
 
       {/* Main Flashcard Arena */}
       <main className="card-stage">
+        {toastMessage && (
+          <div className="shuffle-toast" role="status" aria-live="polite">
+            {toastMessage}
+          </div>
+        )}
         {deck.length > 0 && currentCard ? (
           <div className="flashcard-wrapper">
             {/* The 3D Flip Card */}
             <div
-              className={`flashcard ${isFlipped ? 'flipped' : ''} ${feedback === 'ok' ? 'card-ok' : ''} ${feedback === 'repeat' ? 'card-repeat' : ''}`}
+              className={`flashcard ${isFlipped ? 'flipped' : ''} ${feedback === 'ok' ? 'card-ok' : ''} ${feedback === 'repeat' ? 'card-repeat' : ''} ${isShuffling ? 'shuffling' : ''}`}
               onClick={handleFlip}
               title="Klicken zum Umdrehen"
             >
@@ -632,6 +818,19 @@ export default function Quiz() {
                   <button className="btn-primary" onClick={initDeck}>
                     🔄 Diese Runde nochmals üben
                   </button>
+                  <button className="btn-shuffle-restart" onClick={handleRestartShuffled}>
+                    🔀 Gemischt nochmals üben
+                  </button>
+                  {mode === 'week' && (
+                    <button className="btn-new-week" onClick={handleGenerateNewWeek}>
+                      🎲 20 neue Wörter ziehen
+                    </button>
+                  )}
+                  {mode === 'all' && (
+                    <button className="btn-new-week" onClick={handleResetAndShuffleAll}>
+                      ⚡ Alle {questions.length} neu mischen
+                    </button>
+                  )}
                   <button
                     className="btn-secondary"
                     onClick={() => setMode(mode === 'all' ? 'week' : 'all')}
@@ -662,7 +861,7 @@ export default function Quiz() {
         </div>
         <div className="keyboard-shortcuts">
           <span>
-            ⌨️ Tastatur: <code>Leertaste</code> Umdrehen • <code>← / 1</code> Nein • <code>→ / 2</code> OK • <code>A</code> Audio
+            ⌨️ Tastatur: <code>Leertaste</code> Umdrehen • <code>← / 1</code> Nein • <code>→ / 2</code> OK • <code>A</code> Audio • <code>S / M</code> Mischen
           </span>
         </div>
       </footer>

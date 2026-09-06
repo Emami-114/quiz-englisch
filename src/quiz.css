@@ -350,6 +350,109 @@
 }
 
 /* --------------------------------------------------------------------------
+   Deck Controls Bar (Shuffle & Mix Buttons)
+   -------------------------------------------------------------------------- */
+.deck-controls-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 18px;
+}
+
+.deck-control-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(30, 41, 59, 0.7);
+  color: #e2e8f0;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+.deck-control-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.deck-control-btn .ctrl-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.deck-control-btn .ctrl-label {
+  letter-spacing: 0.01em;
+}
+
+.deck-control-btn .ctrl-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+}
+
+/* Specific button themes */
+.btn-shuffle {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(79, 70, 229, 0.25));
+  border-color: rgba(129, 140, 248, 0.35);
+  color: #c7d2fe;
+}
+
+.btn-shuffle:hover:not(:disabled) {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  border-color: #818cf8;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+}
+
+.btn-new-week {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.25));
+  border-color: rgba(52, 211, 153, 0.35);
+  color: #a7f3d0;
+}
+
+.btn-new-week:hover:not(:disabled) {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-color: #34d399;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35);
+}
+
+.btn-all-shuffle {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(168, 85, 247, 0.25));
+  border-color: rgba(244, 114, 182, 0.35);
+  color: #fbcfe8;
+}
+
+.btn-all-shuffle:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ec4899, #a855f7);
+  border-color: #f472b6;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(236, 72, 153, 0.35);
+}
+
+.deck-control-btn:active:not(:disabled) {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* --------------------------------------------------------------------------
    Progress Bar
    -------------------------------------------------------------------------- */
 .progress-container {
@@ -400,6 +503,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .flashcard-wrapper {
@@ -445,6 +549,53 @@
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-8px); filter: drop-shadow(0 0 16px rgba(239, 68, 68, 0.6)); }
   75% { transform: translateX(8px); filter: drop-shadow(0 0 16px rgba(239, 68, 68, 0.6)); }
+}
+
+.flashcard.shuffling {
+  animation: cardShufflePop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes cardShufflePop {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.96) rotate(-1.5deg); filter: drop-shadow(0 0 20px rgba(99, 102, 241, 0.5)); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* --------------------------------------------------------------------------
+   Shuffle Toast Notification
+   -------------------------------------------------------------------------- */
+.shuffle-toast {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.94);
+  border: 1px solid rgba(129, 140, 248, 0.5);
+  color: #e0e7ff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 24px rgba(99, 102, 241, 0.3);
+  backdrop-filter: blur(14px);
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: toastPop 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@keyframes toastPop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
 }
 
 .card-face {
@@ -981,6 +1132,27 @@
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
 }
 
+.btn-shuffle-restart {
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-shuffle-restart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
 .btn-secondary {
   padding: 12px 18px;
   font-size: 14px;
@@ -1123,6 +1295,16 @@
 
   .action-text small {
     font-size: 10px;
+  }
+
+  .deck-controls-bar {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .deck-control-btn {
+    padding: 7px 12px;
+    font-size: 12px;
   }
 
   .keyboard-shortcuts {
